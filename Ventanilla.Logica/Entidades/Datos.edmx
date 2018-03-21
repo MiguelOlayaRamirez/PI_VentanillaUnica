@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Datos.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="DatosStoreContainer">
+          <EntitySet Name="Administracion" EntityType="Datos.Store.Administracion" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Despacho" EntityType="Datos.Store.Despacho" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Proceso" EntityType="Datos.Store.Proceso" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Radicado" EntityType="Datos.Store.Radicado" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Terceros" EntityType="Datos.Store.Terceros" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Usuarios" EntityType="Datos.Store.Usuarios" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_Administracion_Despacho" Association="Datos.Store.FK_Administracion_Despacho">
+            <End Role="Despacho" EntitySet="Despacho" />
+            <End Role="Administracion" EntitySet="Administracion" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Administracion_Proceso" Association="Datos.Store.FK_Administracion_Proceso">
+            <End Role="Proceso" EntitySet="Proceso" />
+            <End Role="Administracion" EntitySet="Administracion" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Radicado_Administracion" Association="Datos.Store.FK_Radicado_Administracion">
+            <End Role="Administracion" EntitySet="Administracion" />
+            <End Role="Radicado" EntitySet="Radicado" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Radicado_Terceros" Association="Datos.Store.FK_Radicado_Terceros">
+            <End Role="Terceros" EntitySet="Terceros" />
+            <End Role="Radicado" EntitySet="Radicado" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Radicado_Usuarios" Association="Datos.Store.FK_Radicado_Usuarios">
+            <End Role="Usuarios" EntitySet="Usuarios" />
+            <End Role="Radicado" EntitySet="Radicado" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Administracion">
+          <Key>
+            <PropertyRef Name="CodAdmon" />
+          </Key>
+          <Property Name="CodAdmon" Type="bigint" Nullable="false" />
+          <Property Name="NomAdmon" Type="varchar" MaxLength="50" />
+          <Property Name="ApeAdmon" Type="varchar" MaxLength="50" />
+          <Property Name="CargoAdmon" Type="varchar" MaxLength="50" />
+          <Property Name="AreaAdmon" Type="varchar" MaxLength="50" />
+          <Property Name="CodDespacho" Type="bigint" />
+          <Property Name="CodProceso" Type="bigint" />
+        </EntityType>
+        <EntityType Name="Despacho">
+          <Key>
+            <PropertyRef Name="CodDespacho" />
+          </Key>
+          <Property Name="CodDespacho" Type="bigint" Nullable="false" />
+          <Property Name="DescDespacho" Type="varchar" MaxLength="50" />
+          <Property Name="DestinoDespacho" Type="varchar" MaxLength="50" />
+          <Property Name="Fecha_Despacho" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Proceso">
+          <Key>
+            <PropertyRef Name="CodProceso" />
+          </Key>
+          <Property Name="CodProceso" Type="bigint" Nullable="false" />
+          <Property Name="DescProceso" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Radicado">
+          <Key>
+            <PropertyRef Name="CodRadicado" />
+          </Key>
+          <Property Name="CodRadicado" Type="bigint" Nullable="false" />
+          <Property Name="CodTercero" Type="bigint" />
+          <Property Name="CodAdmon" Type="bigint" />
+          <Property Name="Fecha_Radicado" Type="varchar" MaxLength="50" />
+          <Property Name="DescRadicado" Type="varchar" MaxLength="250" />
+          <Property Name="CodUsuario" Type="bigint" />
+        </EntityType>
+        <EntityType Name="Terceros">
+          <Key>
+            <PropertyRef Name="CodTercero" />
+          </Key>
+          <Property Name="CodTercero" Type="bigint" Nullable="false" />
+          <Property Name="TelTercero" Type="varchar" MaxLength="50" />
+          <Property Name="EmailTercero" Type="varchar" MaxLength="50" />
+          <Property Name="DescTercero" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Usuarios">
+          <Key>
+            <PropertyRef Name="CodUsuario" />
+          </Key>
+          <Property Name="CodUsuario" Type="bigint" Nullable="false" />
+          <Property Name="NomUsuario" Type="varchar" MaxLength="50" />
+          <Property Name="ApeUsuario" Type="varchar" MaxLength="50" />
+          <Property Name="CargoUsuario" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <Association Name="FK_Administracion_Despacho">
+          <End Role="Despacho" Type="Datos.Store.Despacho" Multiplicity="0..1" />
+          <End Role="Administracion" Type="Datos.Store.Administracion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Despacho">
+              <PropertyRef Name="CodDespacho" />
+            </Principal>
+            <Dependent Role="Administracion">
+              <PropertyRef Name="CodDespacho" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Administracion_Proceso">
+          <End Role="Proceso" Type="Datos.Store.Proceso" Multiplicity="0..1" />
+          <End Role="Administracion" Type="Datos.Store.Administracion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Proceso">
+              <PropertyRef Name="CodProceso" />
+            </Principal>
+            <Dependent Role="Administracion">
+              <PropertyRef Name="CodProceso" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Radicado_Administracion">
+          <End Role="Administracion" Type="Datos.Store.Administracion" Multiplicity="0..1" />
+          <End Role="Radicado" Type="Datos.Store.Radicado" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Administracion">
+              <PropertyRef Name="CodAdmon" />
+            </Principal>
+            <Dependent Role="Radicado">
+              <PropertyRef Name="CodAdmon" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Radicado_Terceros">
+          <End Role="Terceros" Type="Datos.Store.Terceros" Multiplicity="0..1" />
+          <End Role="Radicado" Type="Datos.Store.Radicado" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Terceros">
+              <PropertyRef Name="CodTercero" />
+            </Principal>
+            <Dependent Role="Radicado">
+              <PropertyRef Name="CodTercero" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Radicado_Usuarios">
+          <End Role="Usuarios" Type="Datos.Store.Usuarios" Multiplicity="0..1" />
+          <End Role="Radicado" Type="Datos.Store.Radicado" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuarios">
+              <PropertyRef Name="CodUsuario" />
+            </Principal>
+            <Dependent Role="Radicado">
+              <PropertyRef Name="CodUsuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Datos" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="Cnx" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="Administracion" EntityType="Datos.Administracion" />
+          <EntitySet Name="Despacho" EntityType="Datos.Despacho" />
+          <EntitySet Name="Proceso" EntityType="Datos.Proceso" />
+          <EntitySet Name="Radicado" EntityType="Datos.Radicado" />
+          <EntitySet Name="Terceros" EntityType="Datos.Terceros" />
+          <EntitySet Name="Usuarios" EntityType="Datos.Usuarios" />
+          <AssociationSet Name="FK_Administracion_Despacho" Association="Datos.FK_Administracion_Despacho">
+            <End Role="Despacho" EntitySet="Despacho" />
+            <End Role="Administracion" EntitySet="Administracion" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Administracion_Proceso" Association="Datos.FK_Administracion_Proceso">
+            <End Role="Proceso" EntitySet="Proceso" />
+            <End Role="Administracion" EntitySet="Administracion" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Radicado_Administracion" Association="Datos.FK_Radicado_Administracion">
+            <End Role="Administracion" EntitySet="Administracion" />
+            <End Role="Radicado" EntitySet="Radicado" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Radicado_Terceros" Association="Datos.FK_Radicado_Terceros">
+            <End Role="Terceros" EntitySet="Terceros" />
+            <End Role="Radicado" EntitySet="Radicado" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Radicado_Usuarios" Association="Datos.FK_Radicado_Usuarios">
+            <End Role="Usuarios" EntitySet="Usuarios" />
+            <End Role="Radicado" EntitySet="Radicado" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Administracion">
+          <Key>
+            <PropertyRef Name="CodAdmon" />
+          </Key>
+          <Property Name="CodAdmon" Type="Int64" Nullable="false" />
+          <Property Name="NomAdmon" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="ApeAdmon" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="CargoAdmon" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="AreaAdmon" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="CodDespacho" Type="Int64" />
+          <Property Name="CodProceso" Type="Int64" />
+          <NavigationProperty Name="Despacho" Relationship="Datos.FK_Administracion_Despacho" FromRole="Administracion" ToRole="Despacho" />
+          <NavigationProperty Name="Proceso" Relationship="Datos.FK_Administracion_Proceso" FromRole="Administracion" ToRole="Proceso" />
+          <NavigationProperty Name="Radicado" Relationship="Datos.FK_Radicado_Administracion" FromRole="Administracion" ToRole="Radicado" />
+        </EntityType>
+        <EntityType Name="Despacho">
+          <Key>
+            <PropertyRef Name="CodDespacho" />
+          </Key>
+          <Property Name="CodDespacho" Type="Int64" Nullable="false" />
+          <Property Name="DescDespacho" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="DestinoDespacho" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Fecha_Despacho" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Administracion" Relationship="Datos.FK_Administracion_Despacho" FromRole="Despacho" ToRole="Administracion" />
+        </EntityType>
+        <EntityType Name="Proceso">
+          <Key>
+            <PropertyRef Name="CodProceso" />
+          </Key>
+          <Property Name="CodProceso" Type="Int64" Nullable="false" />
+          <Property Name="DescProceso" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Administracion" Relationship="Datos.FK_Administracion_Proceso" FromRole="Proceso" ToRole="Administracion" />
+        </EntityType>
+        <EntityType Name="Radicado">
+          <Key>
+            <PropertyRef Name="CodRadicado" />
+          </Key>
+          <Property Name="CodRadicado" Type="Int64" Nullable="false" />
+          <Property Name="CodTercero" Type="Int64" />
+          <Property Name="CodAdmon" Type="Int64" />
+          <Property Name="Fecha_Radicado" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="DescRadicado" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="CodUsuario" Type="Int64" />
+          <NavigationProperty Name="Administracion" Relationship="Datos.FK_Radicado_Administracion" FromRole="Radicado" ToRole="Administracion" />
+          <NavigationProperty Name="Terceros" Relationship="Datos.FK_Radicado_Terceros" FromRole="Radicado" ToRole="Terceros" />
+          <NavigationProperty Name="Usuarios" Relationship="Datos.FK_Radicado_Usuarios" FromRole="Radicado" ToRole="Usuarios" />
+        </EntityType>
+        <EntityType Name="Terceros">
+          <Key>
+            <PropertyRef Name="CodTercero" />
+          </Key>
+          <Property Name="CodTercero" Type="Int64" Nullable="false" />
+          <Property Name="TelTercero" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="EmailTercero" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="DescTercero" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Radicado" Relationship="Datos.FK_Radicado_Terceros" FromRole="Terceros" ToRole="Radicado" />
+        </EntityType>
+        <EntityType Name="Usuarios">
+          <Key>
+            <PropertyRef Name="CodUsuario" />
+          </Key>
+          <Property Name="CodUsuario" Type="Int64" Nullable="false" />
+          <Property Name="NomUsuario" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="ApeUsuario" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="CargoUsuario" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Radicado" Relationship="Datos.FK_Radicado_Usuarios" FromRole="Usuarios" ToRole="Radicado" />
+        </EntityType>
+        <Association Name="FK_Administracion_Despacho">
+          <End Role="Despacho" Type="Datos.Despacho" Multiplicity="0..1" />
+          <End Role="Administracion" Type="Datos.Administracion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Despacho">
+              <PropertyRef Name="CodDespacho" />
+            </Principal>
+            <Dependent Role="Administracion">
+              <PropertyRef Name="CodDespacho" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Administracion_Proceso">
+          <End Role="Proceso" Type="Datos.Proceso" Multiplicity="0..1" />
+          <End Role="Administracion" Type="Datos.Administracion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Proceso">
+              <PropertyRef Name="CodProceso" />
+            </Principal>
+            <Dependent Role="Administracion">
+              <PropertyRef Name="CodProceso" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Radicado_Administracion">
+          <End Role="Administracion" Type="Datos.Administracion" Multiplicity="0..1" />
+          <End Role="Radicado" Type="Datos.Radicado" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Administracion">
+              <PropertyRef Name="CodAdmon" />
+            </Principal>
+            <Dependent Role="Radicado">
+              <PropertyRef Name="CodAdmon" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Radicado_Terceros">
+          <End Role="Terceros" Type="Datos.Terceros" Multiplicity="0..1" />
+          <End Role="Radicado" Type="Datos.Radicado" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Terceros">
+              <PropertyRef Name="CodTercero" />
+            </Principal>
+            <Dependent Role="Radicado">
+              <PropertyRef Name="CodTercero" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Radicado_Usuarios">
+          <End Role="Usuarios" Type="Datos.Usuarios" Multiplicity="0..1" />
+          <End Role="Radicado" Type="Datos.Radicado" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuarios">
+              <PropertyRef Name="CodUsuario" />
+            </Principal>
+            <Dependent Role="Radicado">
+              <PropertyRef Name="CodUsuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DatosStoreContainer" CdmEntityContainer="Cnx">
+          <EntitySetMapping Name="Administracion">
+            <EntityTypeMapping TypeName="Datos.Administracion">
+              <MappingFragment StoreEntitySet="Administracion">
+                <ScalarProperty Name="CodAdmon" ColumnName="CodAdmon" />
+                <ScalarProperty Name="NomAdmon" ColumnName="NomAdmon" />
+                <ScalarProperty Name="ApeAdmon" ColumnName="ApeAdmon" />
+                <ScalarProperty Name="CargoAdmon" ColumnName="CargoAdmon" />
+                <ScalarProperty Name="AreaAdmon" ColumnName="AreaAdmon" />
+                <ScalarProperty Name="CodDespacho" ColumnName="CodDespacho" />
+                <ScalarProperty Name="CodProceso" ColumnName="CodProceso" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Despacho">
+            <EntityTypeMapping TypeName="Datos.Despacho">
+              <MappingFragment StoreEntitySet="Despacho">
+                <ScalarProperty Name="CodDespacho" ColumnName="CodDespacho" />
+                <ScalarProperty Name="DescDespacho" ColumnName="DescDespacho" />
+                <ScalarProperty Name="DestinoDespacho" ColumnName="DestinoDespacho" />
+                <ScalarProperty Name="Fecha_Despacho" ColumnName="Fecha_Despacho" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Proceso">
+            <EntityTypeMapping TypeName="Datos.Proceso">
+              <MappingFragment StoreEntitySet="Proceso">
+                <ScalarProperty Name="CodProceso" ColumnName="CodProceso" />
+                <ScalarProperty Name="DescProceso" ColumnName="DescProceso" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Radicado">
+            <EntityTypeMapping TypeName="Datos.Radicado">
+              <MappingFragment StoreEntitySet="Radicado">
+                <ScalarProperty Name="CodRadicado" ColumnName="CodRadicado" />
+                <ScalarProperty Name="CodTercero" ColumnName="CodTercero" />
+                <ScalarProperty Name="CodAdmon" ColumnName="CodAdmon" />
+                <ScalarProperty Name="Fecha_Radicado" ColumnName="Fecha_Radicado" />
+                <ScalarProperty Name="DescRadicado" ColumnName="DescRadicado" />
+                <ScalarProperty Name="CodUsuario" ColumnName="CodUsuario" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Terceros">
+            <EntityTypeMapping TypeName="Datos.Terceros">
+              <MappingFragment StoreEntitySet="Terceros">
+                <ScalarProperty Name="CodTercero" ColumnName="CodTercero" />
+                <ScalarProperty Name="TelTercero" ColumnName="TelTercero" />
+                <ScalarProperty Name="EmailTercero" ColumnName="EmailTercero" />
+                <ScalarProperty Name="DescTercero" ColumnName="DescTercero" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Usuarios">
+            <EntityTypeMapping TypeName="Datos.Usuarios">
+              <MappingFragment StoreEntitySet="Usuarios">
+                <ScalarProperty Name="CodUsuario" ColumnName="CodUsuario" />
+                <ScalarProperty Name="NomUsuario" ColumnName="NomUsuario" />
+                <ScalarProperty Name="ApeUsuario" ColumnName="ApeUsuario" />
+                <ScalarProperty Name="CargoUsuario" ColumnName="CargoUsuario" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

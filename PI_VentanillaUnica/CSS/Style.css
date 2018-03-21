@@ -1,0 +1,86 @@
+﻿.col {
+    width:25%;
+}
+
+.button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+
+.button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+}
+
+    .button:hover span {
+        padding-right: 25px;
+    }
+
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+
+.ModalPopupBG
+{
+    background-color: gray;
+    filter: alpha(opacity=60);
+    opacity: 0.6;
+}
+
+.modalPopup {
+    border: 3px solid Gray;
+    background-color: White;
+    padding: 3px;
+    margin-left: 0px;
+}
+
+.txt {
+    /*Tipos de Letra*/
+    font: 100;
+    font-family:Arial;
+    font-size:small;
+    font-weight:100;
+    /*Texto*/
+    color:black;
+    direction:rtl;
+    letter-spacing:normal;
+    line-height:normal;
+    text-align:center;
+    text-transform: uppercase;
+    text-shadow: none;
+    /*Bordes*/
+    border:medium;
+    border-top:solid;
+    border-right:solid;
+    border-left:solid;
+    border-radius:20%;
+    border-color: black;
+    /*Margen Exterior*/
+    margin: auto;
+    /*Margen Interior*/
+    padding: initial;
+    /*Fondos*/
+    background-color:lightblue;
+    /*background-image: url*/
+    background-repeat: repeat;
+    /*Tamaños*/
+    width:90%;
+    height:10%;
+    max-width:100%;
+    min-width:50%;
+    /*Posicionamiento*/
+    display: compact;
+    right: auto;
+    visibility: visible;
+}
+
+.Imagen {
+    background-image:url(~/Imagenes/almacenamiento-en-la-nube.png)
+    }

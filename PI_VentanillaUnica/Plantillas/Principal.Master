@@ -1,0 +1,115 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Principal.master.cs" Inherits="PI_VentanillaUnica.Plantillas.Principal" %>
+
+<%@ Register Src="~/Controles/Menu.ascx" TagPrefix="uc" TagName="Menu" %>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>VENTANILLA UNICA</title>
+    <!-- Bootstrap core CSS-->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom fonts for this template-->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <!-- Page level plugin CSS-->
+    <link href="../vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet" />
+    <!-- Custom styles for this template-->
+    <link href="../CSS/sb-admin.min.css" rel="stylesheet" />
+    <!-- Bootstrap core JavaScript-->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Page level plugin JavaScript-->
+    <script src="../vendor/chart.js/Chart.min.js"></script>
+    <script src="../vendor/datatables/jquery.dataTables.js"></script>
+    <script src="../vendor/datatables/dataTables.bootstrap4.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="../js/sb-admin.min.js"></script>
+    <!-- Custom scripts for this page-->
+    <script src="../js/sb-admin-datatables.min.js"></script>
+    <script src="../js/sb-admin-charts.min.js"></script>
+</head>
+<body class="fixed-nav sticky-footer bg-danger" id="page-top">
+    <form runat="server">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger fixed-top" id="mainNav"  background-color: "#0094ff">
+            VENTANILL&nbsp; UNICA
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+               
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
+                        <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
+                            <i class="fa fa-fw fa-address-card"></i>
+                            <span class="nav-link-text">MODULOS</span>
+                        </a>
+                        <ul class="sidenav-second-level collapse" id="collapseComponents">
+                            <li>
+                               <a href="../Interfaces/Radicados.aspx"  class="btn-outline-primary"> Conulta de Radicados</a>
+                                
+                            </li>
+                            <li>
+                               <a href="../Interfaces/NuevoRadicado.aspx" class="btn-outline-primary"> Nuevo Radicado</a>   
+                            </li>
+                            <li>
+                                <a href="../Interfaces/ActualizarRadicado.aspx"  class="btn-outline-primary">Actualizar Radicado</a>
+                            </li>
+                             <li>
+                                <a href="../Interfaces/DespachoNuevo.aspx"  class="btn-outline-primary ">Despacho</a>
+                            </li>
+                            <li>
+                                <a href="../Interfaces/ActualizarDespacho.aspx"  class="btn-outline-primary">Actualizar Despacho</a>
+                            </li>
+                            <li>
+                                <a href="../Interfaces/frmInformes.aspx"  class="btn-outline-primary">Informes</a>
+                            <%--</li>--%>
+                            <li>
+                                <a href="../Interfaces/frmUsuarios.aspx"  class="btn-outline-primary">Registro</a>
+                            </li>
+                            <li>
+                                <a href="../Interfaces/CrudTerceros.aspx"  class="btn-outline-primary">Tercero</a>
+                            </li>
+                            <li>
+                                <a href="../Interfaces/Login.aspx"  class="btn-outline-primary">Inicio</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Interfaces/Login.aspx">
+                            <i class="fa fa-fw fa-sign-out"></i>Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="content-wrapper">
+            <div class="container-fluid">
+                <asp:ContentPlaceHolder ID="contenedor" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <!-- /.container-fluid-->
+            <!-- /.content-wrapper-->
+            <footer class="sticky-footer">
+                <div class="container">
+                    <div class="text-center">
+                        <small>Copyright Â© Your Website 2018</small>
+                    </div>
+                </div>
+            </footer>
+            <!-- Scroll to Top Button-->
+            <a class="scroll-to-top rounded" href="#page-top">
+                <i class="fa fa-angle-up"></i>
+            </a>
+        </div>
+    </form>
+</body>
+
+</html>

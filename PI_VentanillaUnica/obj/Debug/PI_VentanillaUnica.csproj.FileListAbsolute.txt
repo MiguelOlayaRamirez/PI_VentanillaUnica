@@ -1,0 +1,47 @@
+E:\Universidad\FTAP\Sexto Semestre\Desarrollo Web I\PI_VentanillaUnica\PI_VentanillaUnica\bin\PI_VentanillaUnica.dll
+E:\Universidad\FTAP\Sexto Semestre\Desarrollo Web I\PI_VentanillaUnica\PI_VentanillaUnica\bin\PI_VentanillaUnica.pdb
+E:\Universidad\FTAP\Sexto Semestre\Desarrollo Web I\PI_VentanillaUnica\PI_VentanillaUnica\bin\AjaxControlToolkit.dll
+E:\Universidad\FTAP\Sexto Semestre\Desarrollo Web I\PI_VentanillaUnica\PI_VentanillaUnica\bin\EntityFramework.dll
+E:\Universidad\FTAP\Sexto Semestre\Desarrollo Web I\PI_VentanillaUnica\PI_VentanillaUnica\bin\EntityFramework.SqlServer.dll
+E:\Universidad\FTAP\Sexto Semestre\Desarrollo Web I\PI_VentanillaUnica\PI_VentanillaUnica\bin\Ventanilla.Logica.dll
+E:\Universidad\FTAP\Sexto Semestre\Desarrollo Web I\PI_VentanillaUnica\PI_VentanillaUnica\bin\Ventanilla.Logica.pdb
+E:\Universidad\FTAP\Sexto Semestre\Desarrollo Web I\PI_VentanillaUnica\PI_VentanillaUnica\bin\EntityFramework.xml
+E:\Universidad\FTAP\Sexto Semestre\Desarrollo Web I\PI_VentanillaUnica\PI_VentanillaUnica\bin\EntityFramework.SqlServer.xml
+E:\Universidad\FTAP\Sexto Semestre\Desarrollo Web I\PI_VentanillaUnica\PI_VentanillaUnica\obj\Debug\PI_VentanillaUnica.csprojResolveAssemblyReference.cache
+E:\Universidad\FTAP\Sexto Semestre\Desarrollo Web I\PI_VentanillaUnica\PI_VentanillaUnica\obj\Debug\PI_VentanillaUnica.dll
+E:\Universidad\FTAP\Sexto Semestre\Desarrollo Web I\PI_VentanillaUnica\PI_VentanillaUnica\obj\Debug\PI_VentanillaUnica.pdb
+F:\Universidad\FTAP\Sexto Semestre\Desarrollo Web I\PI_VentanillaUnica\PI_VentanillaUnica\bin\PI_VentanillaUnica.dll
+F:\Universidad\FTAP\Sexto Semestre\Desarrollo Web I\PI_VentanillaUnica\PI_VentanillaUnica\bin\PI_VentanillaUnica.pdb
+F:\Universidad\FTAP\Sexto Semestre\Desarrollo Web I\PI_VentanillaUnica\PI_VentanillaUnica\bin\Ventanilla.Logica.dll
+F:\Universidad\FTAP\Sexto Semestre\Desarrollo Web I\PI_VentanillaUnica\PI_VentanillaUnica\bin\Ventanilla.Logica.pdb
+F:\Universidad\FTAP\Sexto Semestre\Desarrollo Web I\PI_VentanillaUnica\PI_VentanillaUnica\obj\Debug\PI_VentanillaUnica.csprojResolveAssemblyReference.cache
+F:\Universidad\FTAP\Sexto Semestre\Desarrollo Web I\PI_VentanillaUnica\PI_VentanillaUnica\obj\Debug\PI_VentanillaUnica.dll
+F:\Universidad\FTAP\Sexto Semestre\Desarrollo Web I\PI_VentanillaUnica\PI_VentanillaUnica\obj\Debug\PI_VentanillaUnica.pdb
+G:\Universidad\FTAP\Sexto Semestre\Desarrollo Web I\PI_VentanillaUnica\PI_VentanillaUnica\bin\PI_VentanillaUnica.dll
+G:\Universidad\FTAP\Sexto Semestre\Desarrollo Web I\PI_VentanillaUnica\PI_VentanillaUnica\bin\PI_VentanillaUnica.pdb
+G:\Universidad\FTAP\Sexto Semestre\Desarrollo Web I\PI_VentanillaUnica\PI_VentanillaUnica\bin\Ventanilla.Logica.dll
+G:\Universidad\FTAP\Sexto Semestre\Desarrollo Web I\PI_VentanillaUnica\PI_VentanillaUnica\bin\Ventanilla.Logica.pdb
+G:\Universidad\FTAP\Sexto Semestre\Desarrollo Web I\PI_VentanillaUnica\PI_VentanillaUnica\obj\Debug\PI_VentanillaUnica.csprojResolveAssemblyReference.cache
+G:\Universidad\FTAP\Sexto Semestre\Desarrollo Web I\PI_VentanillaUnica\PI_VentanillaUnica\obj\Debug\PI_VentanillaUnica.dll
+G:\Universidad\FTAP\Sexto Semestre\Desarrollo Web I\PI_VentanillaUnica\PI_VentanillaUnica\obj\Debug\PI_VentanillaUnica.pdb
+C:\Users\DIANA\Desktop\PI_VentanillaUnica\PI_VentanillaUnica\bin\PI_VentanillaUnica.dll.config
+C:\Users\DIANA\Desktop\PI_VentanillaUnica\PI_VentanillaUnica\bin\PI_VentanillaUnica.dll
+C:\Users\DIANA\Desktop\PI_VentanillaUnica\PI_VentanillaUnica\bin\PI_VentanillaUnica.pdb
+C:\Users\DIANA\Desktop\PI_VentanillaUnica\PI_VentanillaUnica\bin\Ventanilla.Logica.dll
+C:\Users\DIANA\Desktop\PI_VentanillaUnica\PI_VentanillaUnica\bin\Ventanilla.Logica.pdb
+C:\Users\DIANA\Desktop\PI_VentanillaUnica\PI_VentanillaUnica\bin\Ventanilla.Logica.dll.config
+C:\Users\DIANA\Desktop\PI_VentanillaUnica\PI_VentanillaUnica\obj\Debug\PI_VentanillaUnica.csprojResolveAssemblyReference.cache
+C:\Users\DIANA\Desktop\PI_VentanillaUnica\PI_VentanillaUnica\obj\Debug\PI_VentanillaUnica.csproj.CoreCompileInputs.cache
+C:\Users\DIANA\Desktop\PI_VentanillaUnica\PI_VentanillaUnica\obj\Debug\PI_VentanillaUnica.dll
+C:\Users\DIANA\Desktop\PI_VentanillaUnica\PI_VentanillaUnica\obj\Debug\PI_VentanillaUnica.pdb
+D:\Carlos\PI_VentanillaUnica2\PI_VentanillaUnica\bin\PI_VentanillaUnica.dll.config
+D:\Carlos\PI_VentanillaUnica2\PI_VentanillaUnica\bin\PI_VentanillaUnica.dll
+D:\Carlos\PI_VentanillaUnica2\PI_VentanillaUnica\bin\PI_VentanillaUnica.pdb
+D:\Carlos\PI_VentanillaUnica2\PI_VentanillaUnica\bin\Ventanilla.Logica.dll
+D:\Carlos\PI_VentanillaUnica2\PI_VentanillaUnica\bin\Ventanilla.Logica.pdb
+D:\Carlos\PI_VentanillaUnica2\PI_VentanillaUnica\bin\Ventanilla.Logica.dll.config
+D:\Carlos\PI_VentanillaUnica2\PI_VentanillaUnica\obj\Debug\PI_VentanillaUnica.csprojResolveAssemblyReference.cache
+D:\Carlos\PI_VentanillaUnica2\PI_VentanillaUnica\obj\Debug\PI_VentanillaUnica.csproj.CoreCompileInputs.cache
+D:\Carlos\PI_VentanillaUnica2\PI_VentanillaUnica\obj\Debug\PI_VentanillaUnica.csproj.CopyComplete
+D:\Carlos\PI_VentanillaUnica2\PI_VentanillaUnica\obj\Debug\PI_VentanillaUnica.dll
+D:\Carlos\PI_VentanillaUnica2\PI_VentanillaUnica\obj\Debug\PI_VentanillaUnica.pdb

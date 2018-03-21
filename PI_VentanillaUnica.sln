@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Web
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PI_VentanillaUnica", "PI_VentanillaUnica\PI_VentanillaUnica.csproj", "{3E91A4DA-7909-4B27-B3EB-39C47A41153B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ventanilla.Logica", "Ventanilla.Logica\Ventanilla.Logica.csproj", "{BDFE04EC-A1E0-4FF9-9890-C0B488B3E089}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E91A4DA-7909-4B27-B3EB-39C47A41153B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E91A4DA-7909-4B27-B3EB-39C47A41153B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E91A4DA-7909-4B27-B3EB-39C47A41153B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E91A4DA-7909-4B27-B3EB-39C47A41153B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDFE04EC-A1E0-4FF9-9890-C0B488B3E089}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDFE04EC-A1E0-4FF9-9890-C0B488B3E089}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDFE04EC-A1E0-4FF9-9890-C0B488B3E089}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDFE04EC-A1E0-4FF9-9890-C0B488B3E089}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
