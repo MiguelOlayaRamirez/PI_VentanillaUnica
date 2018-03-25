@@ -18,9 +18,14 @@ namespace PI_VentanillaUnica.Servicios
     {
 
         [WebMethod]
-        public string HelloWorld()
+        public string wsNuevoRadicado(long CodigoRadicado, long CodigoTercero, long CodigoFuncionario, long CodigoUsuario, string FechaRadicado, string DescripcionRadicado)
         {
-            return "Hola a todos";
-        }
+            try
+            {
+                Ventanilla.Logica.Clases.clsProcedure conexionws = new Ventanilla.Logica.Clases.clsProcedure();
+                return conexionws.stNuevoRadicado( CodigoRadicado,  CodigoTercero,  CodigoFuncionario,  CodigoUsuario,  FechaRadicado,  DescripcionRadicado);
+
+            }
+            catch (Exception ex) { throw ex; }       }
     }
 }
