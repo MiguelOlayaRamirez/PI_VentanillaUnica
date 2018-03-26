@@ -11,7 +11,7 @@ namespace Ventanilla.Logica.Entidades
 {
     using System;
     using System.Data.Entity;
-    using System.Data.Entity.Infrastructure;
+   // using System.Data.Entity.Infrastructure;
     
     public partial class Cnx : DbContext
     {
@@ -22,7 +22,7 @@ namespace Ventanilla.Logica.Entidades
     
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            throw new UnintentionalCodeFirstException();
+            //throw new UnintentionalCodeFirstException();
         }
     
         public DbSet<Administracion> Administracion { get; set; }
