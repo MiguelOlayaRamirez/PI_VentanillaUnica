@@ -28,6 +28,7 @@ namespace PI_VentanillaUnica.Interfaces
             Ventanilla.Logica.Clases.clsProcedure obclsClientes = new Ventanilla.Logica.Clases.clsProcedure();
             lblMensaje.Text = obclsClientes.stNuevoRadicado(Convert.ToInt64(txtCodigoRadicado.Text), Convert.ToInt64(txtCodigoTercero.Text), Convert.ToInt64(txtCodigoFuncionario.Text), Convert.ToInt64(txtCodigoUsuario.Text), txtFechaRadicado.Text, txtDescripcionRadicado.Text);
             ClientScript.RegisterStartupScript(this.GetType(), "Mensaje", "<script> swal('"+lblMensaje.Text+"', '', 'success')</script>");
+
             txtCodigoRadicado.Text = "";
             txtCodigoRadicado.Text = "";
             txtCodigoFuncionario.Text = "";

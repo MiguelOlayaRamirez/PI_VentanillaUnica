@@ -26,7 +26,7 @@
                 <br />
                 <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Guardar" />
 &nbsp;&nbsp;&nbsp;
-                <asp:Button ID="Button2" runat="server" Text="Cancelar" OnClick="Button2_Click" />
+                <asp:Button ID="Button2" runat="server" Text="Cancelar"  />
                 <br />
             </td>
         </tr>
