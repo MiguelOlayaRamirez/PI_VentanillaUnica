@@ -1,27 +1,20 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Plantillas/Principal.Master" AutoEventWireup="true" CodeBehind="Radicados.aspx.cs" Inherits="PI_VentanillaUnica.Interfaces.Radicados" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="contenedor" runat="server">
 
     <link href="../CSS/sweetalert.css" rel="stylesheet" />
     <script src="../js/sweetalert.min.js" type="text/javascript"></script>
 
 
-    <p>
-        &nbsp;</p>
-    <p>
-        &nbsp;</p>
-    <p>
-        <strong>&nbsp;
-    <asp:Button ID="Button1" runat="server" Text="CONSULTA" OnClick="Button1_Click" />
-&nbsp;&nbsp;&nbsp;
-    <asp:TextBox ID="txtCodigoRadicado" runat="server"></asp:TextBox>
-    </strong>
-</p>
-<p>
-    &nbsp;</p>
-<p>
-    <strong>&nbsp;&nbsp; </strong>
-</p>
-<p>
+
+    <div class="form-row">
+        <%-- COLUMNA 1 --%>
+        <div class="col-md-6">
+            <asp:TextBox ID="TextBox1" runat="server" Height="26px"></asp:TextBox>&nbsp;&nbsp;
+                    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="CONSULTA" CssClass="btn btn-primary" />&nbsp;
+        </div>
+    </div>
+
     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="CodRadicado" DataSourceID="SqlDataSource1" BackColor="White" BorderColor="White" BorderStyle="Ridge" BorderWidth="2px" CellPadding="3" CellSpacing="1" GridLines="None" Width="1024px">
         <Columns>
             <asp:BoundField DataField="CodRadicado" HeaderText="Radicado" ReadOnly="True" SortExpression="CodRadicado" />
@@ -45,7 +38,8 @@
             <asp:ControlParameter ControlID="txtCodigoRadicado" Name="CodRadicado" PropertyName="Text" Type="Int64" />
         </SelectParameters>
     </asp:SqlDataSource>
-</p>
-<p>
-    &nbsp;</p>
+    </p>
+    <p>
+        &nbsp;
+    </p>
 </asp:Content>

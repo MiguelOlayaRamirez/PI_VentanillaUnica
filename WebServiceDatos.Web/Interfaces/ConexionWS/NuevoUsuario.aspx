@@ -32,7 +32,7 @@ h2,h3,p{orphans:3;widows:3}p{margin-top:0;margin-bottom:1rem}*,::after,::before{
     <p>
 &nbsp;<table class="auto-style3">
                     <tr>
-                        <td class="auto-style6"><strong>Código</strong></td>
+                        <td ><strong>Código</strong></td>
                     </tr>
                     <tr>
                         <td>
@@ -40,7 +40,7 @@ h2,h3,p{orphans:3;widows:3}p{margin-top:0;margin-bottom:1rem}*,::after,::before{
                         </td>
                     </tr>
                     <tr>
-                        <td class="auto-style6"><strong>Nombres</strong></td>
+                        <td ><strong>Nombres</strong></td>
                     </tr>
                     <tr>
                         <td class="auto-style4">
@@ -48,7 +48,7 @@ h2,h3,p{orphans:3;widows:3}p{margin-top:0;margin-bottom:1rem}*,::after,::before{
                         </td>
                     </tr>
                     <tr>
-                        <td class="auto-style6"><strong>Apellidos</strong></td>
+                        <td class=><strong>Apellidos</strong></td>
                     </tr>
                     <tr>
                         <td>
@@ -56,7 +56,7 @@ h2,h3,p{orphans:3;widows:3}p{margin-top:0;margin-bottom:1rem}*,::after,::before{
                         </td>
                     </tr>
                     <tr>
-                        <td class="auto-style5"><strong style="font-size: x-large">Cargo</strong></td>
+                        <td class=><strong >Cargo</strong></td>
                     </tr>
                     <tr>
                         <td>

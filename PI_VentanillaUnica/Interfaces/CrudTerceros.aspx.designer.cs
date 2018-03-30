@@ -13,6 +13,15 @@ namespace PI_VentanillaUnica.Interfaces {
     public partial class CrudTerceros {
         
         /// <summary>
+        /// Control lblUsuario.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblUsuario;
+        
+        /// <summary>
         /// Control txtCodigoTercero.
         /// </summary>
         /// <remarks>
@@ -67,13 +76,13 @@ namespace PI_VentanillaUnica.Interfaces {
         protected global::System.Web.UI.WebControls.Button btnActualizar;
         
         /// <summary>
-        /// Control btnEliminar.
+        /// Control Button2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnEliminar;
+        protected global::System.Web.UI.WebControls.Button Button2;
         
         /// <summary>
         /// Control Button1.
