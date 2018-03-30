@@ -42,5 +42,25 @@ namespace WebServiceDatos.Web.Properties {
                 return ((string)(this["WebServiceDatos_Web_wsNuevoRadicado_Ventanilla_Unica_Ws"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://localhost/PI_VentanillaUnica/NuevoDespacho.Ws.asmx")]
+        public string WebServiceDatos_Web_wsNuevoDespacho_NuevoDespacho_Ws {
+            get {
+                return ((string)(this["WebServiceDatos_Web_wsNuevoDespacho_NuevoDespacho_Ws"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://localhost/PI_VentanillaUnica/NuevoUsuario.asmx")]
+        public string WebServiceDatos_Web_NuevoUsuariows_NuevoUsuario {
+            get {
+                return ((string)(this["WebServiceDatos_Web_NuevoUsuariows_NuevoUsuario"]));
+            }
+        }
     }
 }

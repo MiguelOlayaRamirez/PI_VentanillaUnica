@@ -29,11 +29,3 @@ C:\Users\DIANA\Desktop\PI_VentanillaUnica\Ventanilla.Logica\obj\Debug\Ventanilla
 C:\Users\DIANA\Desktop\PI_VentanillaUnica\Ventanilla.Logica\obj\Debug\Ventanilla.Logica.csproj.CoreCompileInputs.cache
 C:\Users\DIANA\Desktop\PI_VentanillaUnica\Ventanilla.Logica\obj\Debug\Ventanilla.Logica.dll
 C:\Users\DIANA\Desktop\PI_VentanillaUnica\Ventanilla.Logica\obj\Debug\Ventanilla.Logica.pdb
-D:\Carlos\PI_VentanillaUnica2\Ventanilla.Logica\bin\Debug\Ventanilla.Logica.dll.config
-D:\Carlos\PI_VentanillaUnica2\Ventanilla.Logica\bin\Debug\Ventanilla.Logica.dll
-D:\Carlos\PI_VentanillaUnica2\Ventanilla.Logica\bin\Debug\Ventanilla.Logica.pdb
-D:\Carlos\PI_VentanillaUnica2\Ventanilla.Logica\obj\Debug\Ventanilla.Logica.csprojResolveAssemblyReference.cache
-D:\Carlos\PI_VentanillaUnica2\Ventanilla.Logica\obj\Debug\Ventanilla.Logica.csproj.CoreCompileInputs.cache
-D:\Carlos\PI_VentanillaUnica2\Ventanilla.Logica\obj\Debug\Ventanilla.Logica.csproj.CopyComplete
-D:\Carlos\PI_VentanillaUnica2\Ventanilla.Logica\obj\Debug\Ventanilla.Logica.dll
-D:\Carlos\PI_VentanillaUnica2\Ventanilla.Logica\obj\Debug\Ventanilla.Logica.pdb

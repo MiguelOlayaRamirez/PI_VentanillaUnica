@@ -1,3 +1,9 @@
+D:\Carlos\PI_VentanillaUnica2\WebServiceDatos.Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Carlos\PI_VentanillaUnica2\WebServiceDatos.Web\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Carlos\PI_VentanillaUnica2\WebServiceDatos.Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Carlos\PI_VentanillaUnica2\WebServiceDatos.Web\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Carlos\PI_VentanillaUnica2\WebServiceDatos.Web\bin\roslyn\System.IO.Compression.dll
+D:\Carlos\PI_VentanillaUnica2\WebServiceDatos.Web\bin\roslyn\VBCSCompiler.exe
 D:\Carlos\PI_VentanillaUnica2\WebServiceDatos.Web\bin\WebServiceDatos.Web.dll.config
 D:\Carlos\PI_VentanillaUnica2\WebServiceDatos.Web\bin\WebServiceDatos.Web.dll
 D:\Carlos\PI_VentanillaUnica2\WebServiceDatos.Web\bin\WebServiceDatos.Web.pdb
@@ -8,13 +14,9 @@ D:\Carlos\PI_VentanillaUnica2\WebServiceDatos.Web\bin\roslyn\csi.exe
 D:\Carlos\PI_VentanillaUnica2\WebServiceDatos.Web\bin\roslyn\csi.exe.config
 D:\Carlos\PI_VentanillaUnica2\WebServiceDatos.Web\bin\roslyn\csi.rsp
 D:\Carlos\PI_VentanillaUnica2\WebServiceDatos.Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-D:\Carlos\PI_VentanillaUnica2\WebServiceDatos.Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
 D:\Carlos\PI_VentanillaUnica2\WebServiceDatos.Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-D:\Carlos\PI_VentanillaUnica2\WebServiceDatos.Web\bin\roslyn\Microsoft.CodeAnalysis.dll
 D:\Carlos\PI_VentanillaUnica2\WebServiceDatos.Web\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-D:\Carlos\PI_VentanillaUnica2\WebServiceDatos.Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
 D:\Carlos\PI_VentanillaUnica2\WebServiceDatos.Web\bin\roslyn\Microsoft.CSharp.Core.targets
-D:\Carlos\PI_VentanillaUnica2\WebServiceDatos.Web\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
 D:\Carlos\PI_VentanillaUnica2\WebServiceDatos.Web\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
 D:\Carlos\PI_VentanillaUnica2\WebServiceDatos.Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
 D:\Carlos\PI_VentanillaUnica2\WebServiceDatos.Web\bin\roslyn\Microsoft.Win32.Primitives.dll
@@ -24,7 +26,6 @@ D:\Carlos\PI_VentanillaUnica2\WebServiceDatos.Web\bin\roslyn\System.Console.dll
 D:\Carlos\PI_VentanillaUnica2\WebServiceDatos.Web\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
 D:\Carlos\PI_VentanillaUnica2\WebServiceDatos.Web\bin\roslyn\System.Diagnostics.Process.dll
 D:\Carlos\PI_VentanillaUnica2\WebServiceDatos.Web\bin\roslyn\System.Diagnostics.StackTrace.dll
-D:\Carlos\PI_VentanillaUnica2\WebServiceDatos.Web\bin\roslyn\System.IO.Compression.dll
 D:\Carlos\PI_VentanillaUnica2\WebServiceDatos.Web\bin\roslyn\System.IO.FileSystem.dll
 D:\Carlos\PI_VentanillaUnica2\WebServiceDatos.Web\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
 D:\Carlos\PI_VentanillaUnica2\WebServiceDatos.Web\bin\roslyn\System.IO.FileSystem.Primitives.dll
@@ -47,7 +48,6 @@ D:\Carlos\PI_VentanillaUnica2\WebServiceDatos.Web\bin\roslyn\System.Xml.XPath.XD
 D:\Carlos\PI_VentanillaUnica2\WebServiceDatos.Web\bin\roslyn\vbc.exe
 D:\Carlos\PI_VentanillaUnica2\WebServiceDatos.Web\bin\roslyn\vbc.exe.config
 D:\Carlos\PI_VentanillaUnica2\WebServiceDatos.Web\bin\roslyn\vbc.rsp
-D:\Carlos\PI_VentanillaUnica2\WebServiceDatos.Web\bin\roslyn\VBCSCompiler.exe
 D:\Carlos\PI_VentanillaUnica2\WebServiceDatos.Web\bin\roslyn\VBCSCompiler.exe.config
 D:\Carlos\PI_VentanillaUnica2\WebServiceDatos.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 D:\Carlos\PI_VentanillaUnica2\WebServiceDatos.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
@@ -55,3 +55,4 @@ D:\Carlos\PI_VentanillaUnica2\WebServiceDatos.Web\obj\Debug\WebServiceDatos.Web.
 D:\Carlos\PI_VentanillaUnica2\WebServiceDatos.Web\obj\Debug\WebServiceDatos.Web.csproj.CopyComplete
 D:\Carlos\PI_VentanillaUnica2\WebServiceDatos.Web\obj\Debug\WebServiceDatos.Web.dll
 D:\Carlos\PI_VentanillaUnica2\WebServiceDatos.Web\obj\Debug\WebServiceDatos.Web.pdb
+D:\Carlos\PI_VentanillaUnica2\WebServiceDatos.Web\obj\Debug\WebServiceDatos.Web.csprojResolveAssemblyReference.cache

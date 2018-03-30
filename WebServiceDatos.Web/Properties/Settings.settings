@@ -8,5 +8,11 @@
     <Setting Name="WebServiceDatos_Web_wsNuevoRadicado_Ventanilla_Unica_Ws" Type="(Web Service URL)" Scope="Application">
       <Value Profile="(Default)">http://localhost/PI_VentanillaUnica/Ventanilla_Unica_Ws.asmx</Value>
     </Setting>
+    <Setting Name="WebServiceDatos_Web_wsNuevoDespacho_NuevoDespacho_Ws" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/PI_VentanillaUnica/NuevoDespacho.Ws.asmx</Value>
+    </Setting>
+    <Setting Name="WebServiceDatos_Web_NuevoUsuariows_NuevoUsuario" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/PI_VentanillaUnica/NuevoUsuario.asmx</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

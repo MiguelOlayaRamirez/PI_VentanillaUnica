@@ -115,6 +115,8 @@
     <Content Include="js\sb-admin.js" />
     <Content Include="js\sb-admin.min.js" />
     <Content Include="js\sweetalert.min.js" />
+    <Content Include="NuevoDespacho.Ws.asmx" />
+    <Content Include="NuevoUsuario.asmx" />
     <Content Include="Ventanilla_Unica_Ws.asmx" />
     <Content Include="vendor\bootstrap\css\bootstrap-grid.css" />
     <Content Include="vendor\bootstrap\css\bootstrap-grid.min.css" />
@@ -146,7 +148,19 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <None Include="Web References\NuevoUsuariows\NuevoUsuario.wsdl" />
+    <Content Include="Web References\NuevoUsuariows\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </Content>
+    <None Include="Web References\wsNuevoDespacho\NuevoDespacho.disco" />
+    <None Include="Web References\NuevoUsuariows\NuevoUsuario.disco" />
     <Content Include="Web References\wsNuevoRadicadoWeb\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </Content>
+    <None Include="Web References\wsNuevoDespacho\NuevoDespacho.wsdl" />
+    <Content Include="Web References\wsNuevoDespacho\Reference.map">
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </Content>
@@ -254,6 +268,14 @@
     <Compile Include="Interfaces\Radicados.aspx.designer.cs">
       <DependentUpon>Radicados.aspx</DependentUpon>
     </Compile>
+    <Compile Include="NuevoDespacho.Ws.asmx.cs">
+      <DependentUpon>NuevoDespacho.Ws.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NuevoUsuario.asmx.cs">
+      <DependentUpon>NuevoUsuario.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
@@ -273,6 +295,16 @@
     <Compile Include="Ventanilla_Unica_Ws.asmx.cs">
       <DependentUpon>Ventanilla_Unica_Ws.asmx</DependentUpon>
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Web References\NuevoUsuariows\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\wsNuevoDespacho\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
     </Compile>
     <Compile Include="Web References\wsNuevoRadicadoWeb\Reference.cs">
       <AutoGen>True</AutoGen>
@@ -347,6 +379,28 @@
     <WebReferences Include="Web References\" />
   </ItemGroup>
   <ItemGroup>
+    <WebReferenceUrl Include="http://localhost/PI_VentanillaUnica/NuevoDespacho.Ws.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\wsNuevoDespacho\</RelPath>
+      <UpdateFromURL>http://localhost/PI_VentanillaUnica/NuevoDespacho.Ws.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>PI_VentanillaUnica_wsNuevoDespacho_NuevoDespacho_Ws</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost/PI_VentanillaUnica/NuevoUsuario.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\NuevoUsuariows\</RelPath>
+      <UpdateFromURL>http://localhost/PI_VentanillaUnica/NuevoUsuario.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>PI_VentanillaUnica_NuevoUsuariows_NuevoUsuario</CachedSettingsPropName>
+    </WebReferenceUrl>
     <WebReferenceUrl Include="http://localhost/PI_VentanillaUnica/Servicios/Ventanilla_Unica_Ws.asmx">
       <UrlBehavior>Dynamic</UrlBehavior>
       <RelPath>Web References\wsNuevoRadicadoWeb\</RelPath>
