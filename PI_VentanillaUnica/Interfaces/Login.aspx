@@ -44,11 +44,8 @@
                 <p style="text-align: center">
                 <asp:Button ID="btnIngresar" runat="server" Text="Ingresar" BorderStyle="Solid" OnClick="btnIngresar_Click" style="font-weight: 700; font-style: italic; font-size: large; color: #0000FF; text-align: center; background-color: #FFFFFF" Width="107px" />
                 &nbsp;<asp:Button ID="btnRegistro" runat="server" Text="Registrarse" BorderStyle="Solid" style="font-weight: 700; font-style: italic; font-size: large; color: #0000FF; background-color: #FFFFFF" PostBackUrl="~/Interfaces/frmUsuarios.aspx"/>
-                </p>
-                <p style="text-align: center">
                     <center><asp:CheckBox ID="chkRecordar" runat="server" Text="Recordar Usuario" />
-                    &nbsp;&nbsp; <asp:HyperLink ID="hlOlvidasteContraseña" runat="server" NavigateUrl="~/Interfaces/frmRestaurarContraseña.aspx">¿Olvidaste tu Contraseña?</asp:HyperLink></center>
-                </p>
+                    &nbsp;&nbsp; <asp:HyperLink ID="OlvidasteContraseña" runat="server" NavigateUrl="~/Interfaces/frmRestaurarContraseña.aspx">¿Olvidaste tu Contraseña?</asp:HyperLink></center>
             </td>
         </tr>
             <tr>
