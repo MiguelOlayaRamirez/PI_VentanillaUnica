@@ -47,6 +47,7 @@
                 </p>
                 <p style="text-align: center">
                     <asp:CheckBox ID="chkRecordar" runat="server" Text="Recordar Usuario" />
+                    <asp:HyperLink ID="HyperLink1" runat="server">HyperLink</asp:HyperLink>
                 </p>
             </td>
         </tr>
