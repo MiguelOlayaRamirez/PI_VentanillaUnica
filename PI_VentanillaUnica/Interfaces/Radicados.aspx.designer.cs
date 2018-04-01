@@ -13,13 +13,13 @@ namespace PI_VentanillaUnica.Interfaces {
     public partial class Radicados {
         
         /// <summary>
-        /// Control TextBox1.
+        /// Control txtCodigoRadicado.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox txtCodigoRadicado;
         
         /// <summary>
         /// Control Button1.

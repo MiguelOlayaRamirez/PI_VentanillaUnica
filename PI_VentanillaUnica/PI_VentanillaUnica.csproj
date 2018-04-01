@@ -103,6 +103,7 @@
     <Content Include="Interfaces\frmDespacho.aspx" />
     <Content Include="Interfaces\frmInformes.aspx" />
     <Content Include="Interfaces\frmPrincipal.aspx" />
+    <Content Include="Interfaces\frmRestaurarContraseña.aspx" />
     <Content Include="Interfaces\frmSalida.aspx" />
     <Content Include="Interfaces\frmUsuarios.aspx" />
     <Content Include="Interfaces\Login.aspx" />
@@ -232,6 +233,13 @@
     </Compile>
     <Compile Include="Interfaces\frmPrincipal.aspx.designer.cs">
       <DependentUpon>frmPrincipal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\frmRestaurarContraseña.aspx.cs">
+      <DependentUpon>frmRestaurarContraseña.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Interfaces\frmRestaurarContraseña.aspx.designer.cs">
+      <DependentUpon>frmRestaurarContraseña.aspx</DependentUpon>
     </Compile>
     <Compile Include="Interfaces\frmSalida.aspx.cs">
       <DependentUpon>frmSalida.aspx</DependentUpon>

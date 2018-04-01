@@ -10,7 +10,7 @@
     <div class="form-row">
         <%-- COLUMNA 1 --%>
         <div class="col-md-6">
-            <asp:TextBox ID="TextBox1" runat="server" Height="26px"></asp:TextBox>&nbsp;&nbsp;
+            <asp:TextBox ID="txtCodigoRadicado" runat="server" Height="26px"></asp:TextBox>&nbsp;&nbsp;
                     <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="CONSULTA" CssClass="btn btn-primary" />&nbsp;
         </div>
     </div>
