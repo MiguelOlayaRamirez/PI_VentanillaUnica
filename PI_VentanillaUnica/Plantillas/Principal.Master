@@ -52,7 +52,7 @@
                         </a>
                         <ul class="sidenav-second-level collapse" id="collapseComponents">
                             <li>
-                               <a href="../Interfaces/Radicados.aspx"  class="btn-outline-primary"> Conulta de Radicados</a>
+                               <a href="../Interfaces/Radicados.aspx"  class="btn-outline-primary"> Consulta de Radicados</a>
                                 
                             </li>
                             <li>

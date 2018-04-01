@@ -104,6 +104,7 @@
                                 <br />
                                 </strong>
                                 <asp:Label ID="lblMensaje" runat="server"></asp:Label>
+                                <asp:Label ID="lblPassword" runat="server" Enabled="False" Visible="False"></asp:Label>
                             </center>
                         </td>
                     </tr>

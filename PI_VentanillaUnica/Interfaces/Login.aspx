@@ -50,7 +50,10 @@
         </tr>
             <tr>
             <td colspan="2">
-                <center><asp:Label ID="lbMensaje" runat="server" style="font-weight: 700; color: #CC3300; text-align: center;"></asp:Label></center>
+                <center>
+                    <asp:Label ID="lbMensaje" runat="server" style="font-weight: 700; color: #CC3300; text-align: center;"></asp:Label>
+                    <asp:Label ID="lblPassword" runat="server" style="font-weight: 700; color: #CC3300; text-align: center;" Enabled="False" Visible="False"></asp:Label>
+                </center>
             </td>
             </tr>
        </table></center>

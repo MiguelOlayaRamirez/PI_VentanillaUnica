@@ -18,7 +18,7 @@ namespace PI_VentanillaUnica
     {
 
         [WebMethod]
-        public string stNuevoUsuario(long Identificacion, string setNombres, string setApellidos, string setCargo)
+        public string stNuevoUsuario(string Identificacion, string setNombres, string setApellidos, string setCargo)
         {
            
                 try

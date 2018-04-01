@@ -22,10 +22,12 @@ namespace PI_VentanillaUnica.Interfaces
         {
             try
             {
-                
+                if (string.IsNullOrEmpty(txtUsuario.Text) || string.IsNullOrEmpty(txtPassword.Text)) throw new Exception("¡¡¡El Usuario o Password no pueden estar vacíos!!!");
+                Ventanilla.Logica.Clases.clsEncriptacion obclsEncriptacion = new Ventanilla.Logica.Clases.clsEncriptacion();
+                lblPassword.Text = obclsEncriptacion.stEncriptar(txtPassword.Text);
 
                 Ventanilla.Logica.Clases.clsProcedure obclsUsuaLogin = new Ventanilla.Logica.Clases.clsProcedure();
-                DataSet dsConsulta = obclsUsuaLogin.stLogin(txtUsuario.Text, Convert.ToInt64(txtPassword.Text));
+                DataSet dsConsulta = obclsUsuaLogin.stLogin(txtUsuario.Text, lblPassword.Text);
 
                 if (dsConsulta.Tables[0].Rows.Count > 0)
                 {

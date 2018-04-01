@@ -28,7 +28,7 @@ namespace Ventanilla.Logica.Clases
             }
 
 
-        public string stInsertarClientes(long Identificacion, string setNombres, string setApellidos, string setCargo)
+        public string stInsertarClientes(string Identificacion, string setNombres, string setApellidos, string setCargo)
         {
             try
             {
@@ -356,7 +356,7 @@ namespace Ventanilla.Logica.Clases
 
 
         }
-        public DataSet stLogin(string stLogin, long stPassword)
+        public DataSet stLogin(string stLogin, string stPassword)
         {
             try
             {

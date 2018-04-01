@@ -59,6 +59,7 @@
     <Compile Include="Clases\clsAdministracion.cs" />
     <Compile Include="Clases\clsConexion.cs" />
     <Compile Include="Clases\clsDespacho.cs" />
+    <Compile Include="Clases\clsEncriptacion.cs" />
     <Compile Include="Clases\clsProcedure.cs" />
     <Compile Include="Clases\clsProceso.cs" />
     <Compile Include="Clases\clsRadicado.cs" />
