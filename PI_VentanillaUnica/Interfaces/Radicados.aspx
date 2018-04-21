@@ -10,18 +10,31 @@
     <div class="form-row">
         <%-- COLUMNA 1 --%>
         <div class="col-md-6">
-            <asp:TextBox ID="txtCodigoRadicado" runat="server" Height="26px"></asp:TextBox>&nbsp;&nbsp;
-                    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="CONSULTA" CssClass="btn btn-primary" />&nbsp;
+            <asp:TextBox ID="txtCodigoRadicado" runat="server" Height="26px" Width="100%"></asp:TextBox>&nbsp;&nbsp;
+            <ajax:AutoCompleteExtender ID="aceBusquedaRadicado" runat="server"
+                ServicePath="~/Ventanilla_Unica_Ws.asmx"
+                            ServiceMethod="dsConsultaRadicado"
+                            MinimumPrefixLength="1"
+                            CompletionInterval="100"
+                            EnableCaching="false"
+                            CompletionSetCount="10"
+                            FirstRowSelected="false"
+                            UseContextKey="true"
+                            TargetControlID="txtCodigoRadicado">
+            </ajax:AutoCompleteExtender>
+            <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+                    <asp:Button ID="btnConsulta" runat="server" OnClick="btnConsulta_Click" Text="CONSULTA" CssClass="btn btn-primary" />&nbsp;
         </div>
     </div>
 
     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="CodRadicado" DataSourceID="SqlDataSource1" BackColor="White" BorderColor="White" BorderStyle="Ridge" BorderWidth="2px" CellPadding="3" CellSpacing="1" GridLines="None" Width="1024px">
         <Columns>
-            <asp:BoundField DataField="CodRadicado" HeaderText="Radicado" ReadOnly="True" SortExpression="CodRadicado" />
-            <asp:BoundField DataField="CodTercero" HeaderText="Tercero" SortExpression="CodTercero" />
-            <asp:BoundField DataField="CodAdmon" HeaderText="Administrador" SortExpression="CodAdmon" />
-            <asp:BoundField DataField="Fecha_Radicado" HeaderText="Fecha Radicado" SortExpression="Fecha_Radicado" />
-            <asp:BoundField DataField="DescRadicado" HeaderText="Despacho de Radicado" SortExpression="DescRadicado" />
+            <asp:BoundField DataField="CodRadicado" HeaderText="CodRadicado" InsertVisible="False" ReadOnly="True" SortExpression="CodRadicado" />
+            <asp:BoundField DataField="CodTercero" HeaderText="CodTercero" SortExpression="CodTercero" />
+            <asp:BoundField DataField="CodAdmon" HeaderText="CodAdmon" SortExpression="CodAdmon" />
+            <asp:BoundField DataField="Fecha_Radicado" HeaderText="Fecha_Radicado" SortExpression="Fecha_Radicado" />
+            <asp:BoundField DataField="DescRadicado" HeaderText="DescRadicado" SortExpression="DescRadicado" />
+            <asp:BoundField DataField="CodUsuario" HeaderText="CodUsuario" SortExpression="CodUsuario" />
         </Columns>
         <FooterStyle BackColor="#C6C3C6" ForeColor="Black" />
         <HeaderStyle BackColor="#4A3C8C" Font-Bold="True" ForeColor="#E7E7FF" />
@@ -33,7 +46,7 @@
         <SortedDescendingCellStyle BackColor="#CAC9C9" />
         <SortedDescendingHeaderStyle BackColor="#33276A" />
     </asp:GridView>
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Ventanilla UnicaConnectionString3 %>" SelectCommand="SELECT [CodRadicado], [CodTercero], [CodAdmon], [Fecha_Radicado], [DescRadicado] FROM [Radicado] WHERE ([CodRadicado] = @CodRadicado)">
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Ventanilla UnicaConnectionString4 %>" SelectCommand="SELECT * FROM [Radicado] WHERE ([CodRadicado] = @CodRadicado)">
         <SelectParameters>
             <asp:ControlParameter ControlID="txtCodigoRadicado" Name="CodRadicado" PropertyName="Text" Type="Int64" />
         </SelectParameters>

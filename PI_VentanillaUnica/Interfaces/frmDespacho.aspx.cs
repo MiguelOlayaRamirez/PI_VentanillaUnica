@@ -11,7 +11,14 @@ namespace PI_VentanillaUnica.Interfaces
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+                if (Session["sessionEmail"] == null)
+                {
+                    Response.Redirect("../Interfaces/Login.aspx");
+                    // lblUsuario.Text = Session["Login"].ToString();
+                }
+            }
         }
 
         protected void btnConsulta_Click(object sender, EventArgs e)

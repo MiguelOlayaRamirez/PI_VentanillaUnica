@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Services;
 using System.Data;
+using System.Net;
 
 namespace PI_VentanillaUnica.Servicios
 {
@@ -16,8 +17,10 @@ namespace PI_VentanillaUnica.Servicios
     public class Ventanilla_Unica_Ws : System.Web.Services.WebService
     {
         public Ventanilla.Logica.Clases.clsSeguridad SoapHeader;
+        public NetworkCredential Credentials;
 
         [WebMethod]
+        [System.Web.Services.Protocols.SoapHeader("SoapHeader")]
         public string wsNuevoRadicado(long CodigoRadicado, long CodigoTercero, long CodigoFuncionario, long CodigoUsuario, string FechaRadicado, string DescripcionRadicado)
         {
             try
@@ -85,16 +88,17 @@ namespace PI_VentanillaUnica.Servicios
 
 
         [WebMethod]
+        [System.Web.Services.Protocols.SoapHeader("SoapHeader")]
         public string AutenticacionUsuario()
         {
             try
             {
                 if (SoapHeader == null) return "-1";
-                if (!SoapHeader.blCredenciales(SoapHeader.stToken)) return "-1";
+                if (!SoapHeader.blCredencialesValidas(SoapHeader.stToken)) return "-1";
 
                 string stToken = Guid.NewGuid().ToString();
 
-                HttpRuntime.Cache.Add(stToken,
+                    HttpRuntime.Cache.Add(stToken,
                     SoapHeader.stToken,
                     null,
                     System.Web.Caching.Cache.NoAbsoluteExpiration,
@@ -124,7 +128,7 @@ namespace PI_VentanillaUnica.Servicios
 
 
 
-                //Ventanilla.Logica.Interfaces.
+               
             }
             catch (Exception ex) { throw ex; }
         }

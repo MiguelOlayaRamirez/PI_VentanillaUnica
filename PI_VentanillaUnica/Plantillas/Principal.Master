@@ -34,11 +34,11 @@
     <script src="../js/sb-admin-datatables.min.js"></script>
     <script src="../js/sb-admin-charts.min.js"></script>
 </head>
-<body class="fixed-nav sticky-footer bg-danger" id="page-top">
+<body class="fixed-nav sticky-footer bg-primary" id="page-top">
     <form runat="server">
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-danger fixed-top" id="mainNav"  >
-            VENTANILL&nbsp; UNICA
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="mainNav"  >
+            <h3 style='color: #A9E2F3' class="font-weight-bold">ADVANCE - VENTANILLA&nbsp; ÚNICA</h3>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -79,13 +79,21 @@
                             <li>
                                 <a href="../Interfaces/Login.aspx"  class="btn-outline-primary">Inicio</a>
                             </li>
+                                <li>
+                                <a href="../Interfaces/CargaDocumento.aspx"  class="btn-outline-primary">Cargar Documentos</a>
+                            </li>
                         </ul>
                     </li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="../Interfaces/Login.aspx">
-                            <i class="fa fa-fw fa-sign-out"></i>Logout</a>
+                        <h3>Usuario en Línea: </h3>
+                    </li>
+                    <li class="nav-item">
+                        <asp:Label runat="server" ID="lblUsuario" CssClass="btn btn-block"></asp:Label>
+                    </li>
+                    <li class="nav-item">
+                       <asp:Button runat="server" ID="btSalir" CssClass="btn btn-danger" Text="Salir" OnClick="btSalir_Click"/>
                     </li>
                 </ul>
             </div>
@@ -100,7 +108,7 @@
             <footer class="sticky-footer">
                 <div class="container">
                     <div class="text-center">
-                        <small>Copyright Â© Your Website 2018</small>
+                        <small>Copyright © Advance - Ventanilla Única 2018</small>
                     </div>
                 </div>
             </footer>

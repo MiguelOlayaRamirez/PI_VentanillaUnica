@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PI_VentanillaUnica.Servicios;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -14,28 +15,14 @@ namespace WebServiceDatos.Web.Interfaces.ConexionWS
 
         }
 
-        //protected void Button1_Click(object sender, EventArgs e)
-        //{
-        //    try
-        //    {
-        //        NuevoUsuariows.NuevoUsuario obobNuevoUsuariows = new NuevoUsuariows.NuevoUsuario();
-        //        string stMensaje = obobNuevoUsuariows.stNuevoUsuario(Convert.ToInt64(txtCodigoTercero.Text),  txtEmail.Text,  TxtNombre.Text, TxtTelefono.Text);
-
-        //        Response.Write("<Script Language ='JavaScript'> parent.alert('" + stMensaje + "');</Script>");
-
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        Response.Write("<Script Language ='JavaScript'> parent.alert('" + ex.Message + "');</Script>");
-        //    }
-        //}
+  
 
         protected void txtGuardar_Click(object sender, EventArgs e)
         {
             try
             {
-                NuevoUsuariows.NuevoUsuario obobNuevoUsuariows = new NuevoUsuariows.NuevoUsuario();
-                string stMensaje = obobNuevoUsuariows.stNuevoUsuario(Convert.ToInt64(txtCodigoUsuario.Text), txtNombreUsuario.Text, txtApellidosUsuario.Text, txtCargoUsuario.Text);
+                Ventanilla_Unica_Ws obVentanilla_Unica_Ws = new Ventanilla_Unica_Ws();
+                string stMensaje = obVentanilla_Unica_Ws.stNuevoUsuario(Convert.ToInt64(txtCodigoUsuario.Text), txtNombreUsuario.Text, txtApellidosUsuario.Text, txtCargoUsuario.Text);
 
                 Response.Write("<Script Language ='JavaScript'> parent.alert('" + stMensaje + "');</Script>");
 

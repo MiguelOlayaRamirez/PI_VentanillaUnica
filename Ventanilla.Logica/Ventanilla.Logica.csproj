@@ -47,8 +47,11 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Entity" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Net.Http" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -60,9 +63,14 @@
     <Compile Include="Clases\clsConexion.cs" />
     <Compile Include="Clases\clsDespacho.cs" />
     <Compile Include="Clases\clsEncriptacion.cs" />
+    <Compile Include="Clases\clsGeneralEnvioCorreo.cs" />
     <Compile Include="Clases\clsProcedure.cs" />
     <Compile Include="Clases\clsProceso.cs" />
     <Compile Include="Clases\clsRadicado.cs" />
+    <Compile Include="Clases\clsRadicadoAutocompletar.cs" />
+    <Compile Include="Clases\clsRecuperarPassword.cs" />
+    <Compile Include="Clases\clsSeguridad.cs" />
+    <Compile Include="Clases\clsTerceroAutocompletar.cs" />
     <Compile Include="Clases\clsTerceros.cs" />
     <Compile Include="Clases\clsUsuarios.cs" />
     <Compile Include="Entidades\Administracion.cs">
@@ -104,6 +112,7 @@
     <Compile Include="Interfaces\clsRadicadoInterface.cs" />
     <Compile Include="Interfaces\clsTercerosInterface.cs" />
     <Compile Include="Interfaces\clsUsuariosInterface.cs" />
+    <Compile Include="Modelo\clsEmail.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

@@ -44,8 +44,10 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AjaxControlToolkit">
-      <HintPath>..\..\dll\AjaxControlToolkit.dll</HintPath>
+    <Reference Include="AjaxControlToolkit, Version=18.1.0.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\AjaxControlToolkit.18.1.0\lib\net40\AjaxControlToolkit.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="EntityFramework">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
@@ -97,14 +99,14 @@
     <Content Include="Imagenes\Ventanilla única.jpg" />
     <Content Include="Interfaces\ActualizarDespacho.aspx" />
     <Content Include="Interfaces\ActualizarRadicado.aspx" />
+    <Content Include="Interfaces\CargaDocumento.aspx" />
     <Content Include="Interfaces\CrudTerceros.aspx" />
     <Content Include="Interfaces\DespachoNuevo.aspx" />
     <Content Include="Interfaces\frmAdministracion.aspx" />
     <Content Include="Interfaces\frmDespacho.aspx" />
     <Content Include="Interfaces\frmInformes.aspx" />
     <Content Include="Interfaces\frmPrincipal.aspx" />
-    <Content Include="Interfaces\frmRestaurarContraseña.aspx" />
-    <Content Include="Interfaces\frmSalida.aspx" />
+    <Content Include="Interfaces\frmRecuperarContraseña.aspx" />
     <Content Include="Interfaces\frmUsuarios.aspx" />
     <Content Include="Interfaces\Login.aspx" />
     <Content Include="Interfaces\NuevoRadicado.aspx" />
@@ -116,9 +118,6 @@
     <Content Include="js\sb-admin.js" />
     <Content Include="js\sb-admin.min.js" />
     <Content Include="js\sweetalert.min.js" />
-    <Content Include="NuevoDespacho.Ws.asmx" />
-    <Content Include="NuevoUsuario.asmx" />
-    <Content Include="Ventanilla_Unica_Ws.asmx" />
     <Content Include="vendor\bootstrap\css\bootstrap-grid.css" />
     <Content Include="vendor\bootstrap\css\bootstrap-grid.min.css" />
     <Content Include="vendor\bootstrap\css\bootstrap-reboot.css" />
@@ -178,6 +177,7 @@
     <Compile Include="Controles\Menu.ascx.designer.cs">
       <DependentUpon>Menu.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Controles\RecuperarPasswordController.cs" />
     <Compile Include="Interfaces\ActualizarDespacho.aspx.cs">
       <DependentUpon>ActualizarDespacho.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -191,6 +191,13 @@
     </Compile>
     <Compile Include="Interfaces\ActualizarRadicado.aspx.designer.cs">
       <DependentUpon>ActualizarRadicado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\CargaDocumento.aspx.cs">
+      <DependentUpon>CargaDocumento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Interfaces\CargaDocumento.aspx.designer.cs">
+      <DependentUpon>CargaDocumento.aspx</DependentUpon>
     </Compile>
     <Compile Include="Interfaces\CrudTerceros.aspx.cs">
       <DependentUpon>CrudTerceros.aspx</DependentUpon>
@@ -234,19 +241,12 @@
     <Compile Include="Interfaces\frmPrincipal.aspx.designer.cs">
       <DependentUpon>frmPrincipal.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Interfaces\frmRestaurarContraseña.aspx.cs">
-      <DependentUpon>frmRestaurarContraseña.aspx</DependentUpon>
+    <Compile Include="Interfaces\frmRecuperarContraseña.aspx.cs">
+      <DependentUpon>frmRecuperarContraseña.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Interfaces\frmRestaurarContraseña.aspx.designer.cs">
-      <DependentUpon>frmRestaurarContraseña.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Interfaces\frmSalida.aspx.cs">
-      <DependentUpon>frmSalida.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Interfaces\frmSalida.aspx.designer.cs">
-      <DependentUpon>frmSalida.aspx</DependentUpon>
+    <Compile Include="Interfaces\frmRecuperarContraseña.aspx.designer.cs">
+      <DependentUpon>frmRecuperarContraseña.aspx</DependentUpon>
     </Compile>
     <Compile Include="Interfaces\frmUsuarios.aspx.cs">
       <DependentUpon>frmUsuarios.aspx</DependentUpon>
@@ -276,14 +276,6 @@
     <Compile Include="Interfaces\Radicados.aspx.designer.cs">
       <DependentUpon>Radicados.aspx</DependentUpon>
     </Compile>
-    <Compile Include="NuevoDespacho.Ws.asmx.cs">
-      <DependentUpon>NuevoDespacho.Ws.asmx</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="NuevoUsuario.asmx.cs">
-      <DependentUpon>NuevoUsuario.asmx</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
@@ -299,10 +291,6 @@
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
-    </Compile>
-    <Compile Include="Ventanilla_Unica_Ws.asmx.cs">
-      <DependentUpon>Ventanilla_Unica_Ws.asmx</DependentUpon>
-      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Web References\NuevoUsuariows\Reference.cs">
       <AutoGen>True</AutoGen>
@@ -422,7 +410,7 @@
     </WebReferenceUrl>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Servicios\" />
+    <Folder Include="CargaDocumento\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -36,3 +36,35 @@ D:\Semestre VI\PI\PI_VentanillaUnica2\Ventanilla.Logica\obj\Debug\Ventanilla.Log
 D:\Semestre VI\PI\PI_VentanillaUnica2\Ventanilla.Logica\obj\Debug\Ventanilla.Logica.csproj.CopyComplete
 D:\Semestre VI\PI\PI_VentanillaUnica2\Ventanilla.Logica\obj\Debug\Ventanilla.Logica.dll
 D:\Semestre VI\PI\PI_VentanillaUnica2\Ventanilla.Logica\obj\Debug\Ventanilla.Logica.pdb
+D:\Semestre VI\Pruebas\PI_VentanillaUnica2\Ventanilla.Logica\bin\Debug\Ventanilla.Logica.dll.config
+D:\Semestre VI\Pruebas\PI_VentanillaUnica2\Ventanilla.Logica\bin\Debug\Ventanilla.Logica.dll
+D:\Semestre VI\Pruebas\PI_VentanillaUnica2\Ventanilla.Logica\bin\Debug\Ventanilla.Logica.pdb
+D:\Semestre VI\Pruebas\PI_VentanillaUnica2\Ventanilla.Logica\obj\Debug\Ventanilla.Logica.csprojResolveAssemblyReference.cache
+D:\Semestre VI\Pruebas\PI_VentanillaUnica2\Ventanilla.Logica\obj\Debug\Ventanilla.Logica.csproj.CoreCompileInputs.cache
+D:\Semestre VI\Pruebas\PI_VentanillaUnica2\Ventanilla.Logica\obj\Debug\Ventanilla.Logica.csproj.CopyComplete
+D:\Semestre VI\Pruebas\PI_VentanillaUnica2\Ventanilla.Logica\obj\Debug\Ventanilla.Logica.dll
+D:\Semestre VI\Pruebas\PI_VentanillaUnica2\Ventanilla.Logica\obj\Debug\Ventanilla.Logica.pdb
+G:\WebII\PI\PI_VentanillaUnica2\Ventanilla.Logica\bin\Debug\Ventanilla.Logica.dll.config
+G:\WebII\PI\PI_VentanillaUnica2\Ventanilla.Logica\bin\Debug\Ventanilla.Logica.dll
+G:\WebII\PI\PI_VentanillaUnica2\Ventanilla.Logica\bin\Debug\Ventanilla.Logica.pdb
+G:\WebII\PI\PI_VentanillaUnica2\Ventanilla.Logica\obj\Debug\Ventanilla.Logica.csproj.CoreCompileInputs.cache
+G:\WebII\PI\PI_VentanillaUnica2\Ventanilla.Logica\obj\Debug\Ventanilla.Logica.csproj.CopyComplete
+G:\WebII\PI\PI_VentanillaUnica2\Ventanilla.Logica\obj\Debug\Ventanilla.Logica.dll
+G:\WebII\PI\PI_VentanillaUnica2\Ventanilla.Logica\obj\Debug\Ventanilla.Logica.pdb
+D:\Semestre VI\PI\PI_VentanillaUnica2\Ventanilla.Logica\obj\Debug\Ventanilla.Logica.csprojResolveAssemblyReference.cache
+D:\Universidad\WebII\Pruebas\PI_VentanillaUnica2\Ventanilla.Logica\bin\Debug\Ventanilla.Logica.dll.config
+D:\Universidad\WebII\Pruebas\PI_VentanillaUnica2\Ventanilla.Logica\bin\Debug\Ventanilla.Logica.dll
+D:\Universidad\WebII\Pruebas\PI_VentanillaUnica2\Ventanilla.Logica\bin\Debug\Ventanilla.Logica.pdb
+D:\Universidad\WebII\Pruebas\PI_VentanillaUnica2\Ventanilla.Logica\obj\Debug\Ventanilla.Logica.csprojResolveAssemblyReference.cache
+D:\Universidad\WebII\Pruebas\PI_VentanillaUnica2\Ventanilla.Logica\obj\Debug\Ventanilla.Logica.csproj.CoreCompileInputs.cache
+D:\Universidad\WebII\Pruebas\PI_VentanillaUnica2\Ventanilla.Logica\obj\Debug\Ventanilla.Logica.csproj.CopyComplete
+D:\Universidad\WebII\Pruebas\PI_VentanillaUnica2\Ventanilla.Logica\obj\Debug\Ventanilla.Logica.dll
+D:\Universidad\WebII\Pruebas\PI_VentanillaUnica2\Ventanilla.Logica\obj\Debug\Ventanilla.Logica.pdb
+D:\PI_VentanillaUnica5\Ventanilla.Logica\bin\Debug\Ventanilla.Logica.dll.config
+D:\PI_VentanillaUnica5\Ventanilla.Logica\bin\Debug\Ventanilla.Logica.dll
+D:\PI_VentanillaUnica5\Ventanilla.Logica\bin\Debug\Ventanilla.Logica.pdb
+D:\PI_VentanillaUnica5\Ventanilla.Logica\obj\Debug\Ventanilla.Logica.csprojResolveAssemblyReference.cache
+D:\PI_VentanillaUnica5\Ventanilla.Logica\obj\Debug\Ventanilla.Logica.csproj.CoreCompileInputs.cache
+D:\PI_VentanillaUnica5\Ventanilla.Logica\obj\Debug\Ventanilla.Logica.csproj.CopyComplete
+D:\PI_VentanillaUnica5\Ventanilla.Logica\obj\Debug\Ventanilla.Logica.dll
+D:\PI_VentanillaUnica5\Ventanilla.Logica\obj\Debug\Ventanilla.Logica.pdb

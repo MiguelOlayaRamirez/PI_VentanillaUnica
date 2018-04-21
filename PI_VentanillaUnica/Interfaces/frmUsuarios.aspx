@@ -46,16 +46,6 @@
         </div>
         <div>
             <asp:Panel ID="pnlSeparador" runat="server">
-                <table class="auto-style8">
-                    <tr>
-                        <td style="width:97%">
-                            <asp:Button ID="btnAnterior" runat="server" Text="Anterior" style="font-size: medium; font-weight: 700; color: #3333FF" PostBackUrl="~/Interfaces/Login.aspx"/>
-                        </td>
-                        <td style="width:3%">
-                            <asp:Button ID="btnSalir" runat="server" style="font-weight: 700; font-size: medium; color: #CC0000;" Text="Salir" PostBackUrl="~/Interfaces/frmSalida.aspx"/>
-                        </td>
-                    </tr>
-                </table>
             </asp:Panel>
         </div>
         <center>
@@ -63,15 +53,15 @@
             <asp:Panel ID="pnlRegistroUsuario" runat="server" Width="237px" BackImageUrl="~/Imagenes/registro.png">
                 <table class="auto-style3">
                     <tr>
-                        <td class="auto-style6"><strong>Código</strong></td>
+                        <td class="auto-style6"><strong>Password</strong></td>
                     </tr>
                     <tr>
                         <td>
-                            <asp:TextBox ID="txtCodigoUsuario" runat="server" Height="20px" Width="210px"></asp:TextBox>
+                            <asp:TextBox ID="txtCodigoUsuario" runat="server" Height="20px" Width="210px" TextMode="Password"></asp:TextBox>
                         </td>
                     </tr>
                     <tr>
-                        <td class="auto-style6"><strong>Nombres</strong></td>
+                        <td class="auto-style6"><strong>Correo Electrónico</strong></td>
                     </tr>
                     <tr>
                         <td class="auto-style4">
@@ -79,7 +69,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="auto-style6"><strong>Apellidos</strong></td>
+                        <td class="auto-style6"><strong>Nombres y Apellidos</strong></td>
                     </tr>
                     <tr>
                         <td>
@@ -104,7 +94,9 @@
                                 <br />
                                 </strong>
                                 <asp:Label ID="lblMensaje" runat="server"></asp:Label>
-                                <asp:Label ID="lblPassword" runat="server" Enabled="False" Visible="False"></asp:Label>
+                                <div class="text-center">
+                                    <a class="d-block small mt-3" href="Login.aspx">Login</a>
+                                </div>
                             </center>
                         </td>
                     </tr>

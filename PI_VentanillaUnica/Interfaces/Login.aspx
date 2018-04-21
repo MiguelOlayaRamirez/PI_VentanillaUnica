@@ -45,14 +45,13 @@
                 <asp:Button ID="btnIngresar" runat="server" Text="Ingresar" BorderStyle="Solid" OnClick="btnIngresar_Click" style="font-weight: 700; font-style: italic; font-size: large; color: #0000FF; text-align: center; background-color: #FFFFFF" Width="107px" />
                 &nbsp;<asp:Button ID="btnRegistro" runat="server" Text="Registrarse" BorderStyle="Solid" style="font-weight: 700; font-style: italic; font-size: large; color: #0000FF; background-color: #FFFFFF" PostBackUrl="~/Interfaces/frmUsuarios.aspx"/>
                     <center><asp:CheckBox ID="chkRecordar" runat="server" Text="Recordar Usuario" />
-                    &nbsp;&nbsp; <asp:HyperLink ID="OlvidasteContraseña" runat="server" NavigateUrl="~/Interfaces/frmRestaurarContraseña.aspx">¿Olvidaste tu Contraseña?</asp:HyperLink></center>
+                    &nbsp;&nbsp; <asp:HyperLink ID="OlvidasteContraseña" runat="server" NavigateUrl="~/Interfaces/frmRecuperarContraseña.aspx">¿Olvidaste tu Contraseña?</asp:HyperLink></center>
             </td>
         </tr>
             <tr>
             <td colspan="2">
                 <center>
                     <asp:Label ID="lbMensaje" runat="server" style="font-weight: 700; color: #CC3300; text-align: center;"></asp:Label>
-                    <asp:Label ID="lblPassword" runat="server" style="font-weight: 700; color: #CC3300; text-align: center;" Enabled="False" Visible="False"></asp:Label>
                 </center>
             </td>
             </tr>

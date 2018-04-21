@@ -3,8 +3,6 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="contenedor" runat="server">
     <link href="../CSS/sweetalert.css" rel="stylesheet" />
     <script src="../js/sweetalert.min.js" type="text/javascript"></script>
-   
-   
         <div class="container">
         <div class="mx-auto mt-5">
             <%-- FILA --%>
@@ -19,6 +17,19 @@
                     <div class="col-md-6">
                         Codigo Tercer
                         <asp:TextBox ID="txtCodigoTercero" runat="server" CssClass="form-control"></asp:TextBox>
+                        <ajax:AutoCompleteExtender ID="acexIdentificacionTercero" runat="server"
+                            ServicePath="~/Ventanilla_Unica_Ws.asmx"
+                            ServiceMethod="dsConsultaTerceros"
+                            MinimumPrefixLength="2"
+                            CompletionInterval="100"
+                            EnableCaching="false"
+                            CompletionSetCount="10"
+                            FirstRowSelected="false"
+                            UseContextKey="true"
+                            TargetControlID="txtCodigoTercero">                    
+                        </ajax:AutoCompleteExtender>
+                        <asp:ScriptManager ID="ScriptManager1" runat="server">
+                        </asp:ScriptManager>
                     </div>
                 </div>
             </div>

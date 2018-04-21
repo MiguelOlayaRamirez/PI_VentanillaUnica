@@ -4,9 +4,7 @@
     <link href="../CSS/sweetalert.css" rel="stylesheet" />
     <script src="../js/sweetalert.min.js" type="text/javascript"></script>
     <br />
-    <asp:Label ID="lblMensaje" runat="server" Style="color: #FF0000"></asp:Label>
-
-
+    
     <div class="container">
         <div class="mx-auto mt-5">
             <%-- FILA --%>
@@ -14,8 +12,7 @@
                 <div class="form-row">
                     <%-- COLUMNA 1 --%>
                     <div class="col-md-6">
-                        Usuario en linea
-                        <asp:Label ID="lblUsuario" runat="server" Style="color: #9966FF"></asp:Label>
+                        <h1 style='color: #A9E2F3; margin: 0 0 7px'>Radicación</h1>
                     </div>
                     <%-- COLUMNA 2 --%>
                     <div class="col-md-6">
@@ -34,20 +31,19 @@
                     </div>
                     <%-- COLUMNA 2 --%>
                     <div class="col-md-6">
-                        Codigo Tercero
+                        Código Tercero
                         <asp:TextBox ID="txtCodigoTercero" runat="server" CssClass="form-control"></asp:TextBox>
                     </div>
                     <div class="col-md-6">
-                        Codigo Funcionario
+                        Código Funcionario
                         <asp:TextBox ID="txtCodigoFuncionario" runat="server" CssClass="form-control"></asp:TextBox>
                     </div>
                     <div class="col-md-6">
-                        Dercripcion Radicado
+                        Descripción Radicado
                         <asp:TextBox ID="txtDescripcionRadicado" runat="server" CssClass="form-control"></asp:TextBox>
                     </div>
                     <div class="col-md-6">
-                        Codigo Usuario
-                        <asp:TextBox ID="txtCodigoUsuario" runat="server" CssClass="form-control"></asp:TextBox>
+                        <asp:TextBox ID="txtCodigoUsuario" runat="server" CssClass="form-control" Visible="False" Enabled="false"></asp:TextBox>
                     </div>
                 </div>
             </div>
@@ -55,8 +51,8 @@
             <div class="form-row">
                 <%-- COLUMNA 1 --%>
                 <div class="col-md-6">
-                    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Guardar" CssClass="btn btn-primary" />&nbsp;
-                <asp:Button ID="Button2" runat="server" Text="Cancelar" CssClass="btn btn-primary" />
+                    <asp:Button ID="btnGuardar" runat="server" OnClick="btnGuardar_Click" Text="Guardar" CssClass="btn btn-primary" />&nbsp;
+                    <asp:Button ID="btnCancelar" runat="server" OnClick="btnCancelar_Click" Text="Cancelar" CssClass="btn btn-primary"/>&nbsp;
                 </div>
             </div>
 </asp:Content>

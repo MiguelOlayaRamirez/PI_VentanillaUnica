@@ -40,7 +40,7 @@ namespace Ventanilla.Logica.Clases
 
                 sqlCommand.Parameters.Add(new SqlParameter("@nIdentificacion", Identificacion));
                 sqlCommand.Parameters.Add(new SqlParameter("@cNombre", setNombres));
-                sqlCommand.Parameters.Add(new SqlParameter("@cApellido", setApellidos));
+                sqlCommand.Parameters.Add(new SqlParameter("@cApellido", setApellidos)); 
                 sqlCommand.Parameters.Add(new SqlParameter("@cCargo ", setCargo));
                 sqlParameter = new SqlParameter();
 
@@ -60,7 +60,7 @@ namespace Ventanilla.Logica.Clases
 
         }
     
-    public string stNuevoRadicado(long CodigoRadicado, long CodigoTercero, long CodigoFuncionario, long CodigoUsuario, string FechaRadicado, string DescripcionRadicado)
+        public string stNuevoRadicado(long CodigoRadicado, long CodigoTercero, long CodigoFuncionario, long CodigoUsuario, string FechaRadicado, string DescripcionRadicado)
     {
         try
         {
@@ -126,6 +126,7 @@ namespace Ventanilla.Logica.Clases
 
 
         }
+
         public string stActualizarRadicado(long txtCodigoRadicado, long txtCodigoTercero, long txtCodigoAdministrativo,  string txtFechaRadicado, string txtDescripcion, long txtCodigoUsuario )
         {
            
@@ -161,15 +162,12 @@ namespace Ventanilla.Logica.Clases
 
 
         }
+
         public DataSet stBuscarRadicado(long txtCodigoRadicado)
-        
-            {
+        {
             try
             {
-
-
-
-                DataSet dsConsulta = null;
+                DataSet dsConsulta =new DataSet();
 
                 sqlConnestion = new SqlConnection(setConexion);
                 sqlConnestion.Open();
@@ -178,23 +176,18 @@ namespace Ventanilla.Logica.Clases
                 sqlCommand.CommandType = CommandType.StoredProcedure;
 
                 sqlCommand.Parameters.Add(new SqlParameter("@CodRadicado", txtCodigoRadicado));
-                //sqlCommand.Parameters.Add(new SqlParameter("@CodTercero", txtCodigoTercero));
-                //sqlCommand.Parameters.Add(new SqlParameter("@CodAdmon", txtCodigoAdministrativo));
-                //sqlCommand.Parameters.Add(new SqlParameter("@Fecha_Radicado", txtFechaRadicado));
-                //sqlCommand.Parameters.Add(new SqlParameter("@DescRadicado", txtDescripcion));
-                //sqlCommand.Parameters.Add(new SqlParameter("@CodUsuario", txtCodigoUsuario));
+                
 
                 sqlCommand.ExecuteNonQuery();
                 sqlDataAdapter = new SqlDataAdapter(sqlCommand);
                 sqlDataAdapter.Fill(dsConsulta);
 
-                return dsConsulta;
+                return dsConsulta; 
             }
             catch (Exception ex) { throw ex; }
             finally { sqlConnestion.Close(); }
-
-
         }
+        
         public string stActualizarDespacho(long txtCodigoDespacho, string txtDescripcionDespacho, string txtDestinoDespacho, string txtFechaDespacho)
         {
  
@@ -228,6 +221,7 @@ namespace Ventanilla.Logica.Clases
 
 
         }
+
         public DataSet stConsultarTercero(long CodTercero)
         {
             try
@@ -256,6 +250,7 @@ namespace Ventanilla.Logica.Clases
 
 
         }
+
         public string stActualizarTercero(long txtCodigoTercero, string TxtTelefono, string txtEmail, string TxtNombre)
         {
            
@@ -321,6 +316,7 @@ namespace Ventanilla.Logica.Clases
 
 
         }
+
         public string stInsertarTercero(long txtCodigoTercero, string TxtTelefono, string txtEmail, string TxtNombre)
         {
 
@@ -356,6 +352,7 @@ namespace Ventanilla.Logica.Clases
 
 
         }
+
         public DataSet stLogin(string stLogin, string stPassword)
         {
             try

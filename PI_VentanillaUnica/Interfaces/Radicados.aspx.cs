@@ -14,24 +14,23 @@ namespace PI_VentanillaUnica.Interfaces
             // ClientScript.RegisterStartupScript(this.GetType(), "Mensaje", "<script> swal('Bienvenido Modulo de Radicados!', ' ', 'success')</script>");
             if (!IsPostBack)
             {
-                if (Session["Login"] == null)
+                if (Session["sessionEmail"] == null)
                 {
-                    Response.Redirect("Login.aspx");
+                    Response.Redirect("../Interfaces/Login.aspx");
                     // lblUsuario.Text = Session["Login"].ToString();
                 }
-
             }
 
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void btnConsulta_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(txtCodigoRadicado.Text))
             {
                 ClientScript.RegisterStartupScript(this.GetType(), "Mensaje", "<script> swal('Ingresa el numero del Radicado', '', 'success')</script>");
-                
+
                 txtCodigoRadicado.Text = "";
             }
+        }
     }
-}
 }
