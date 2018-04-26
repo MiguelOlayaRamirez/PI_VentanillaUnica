@@ -68,3 +68,11 @@ D:\PI_VentanillaUnica5\Ventanilla.Logica\obj\Debug\Ventanilla.Logica.csproj.Core
 D:\PI_VentanillaUnica5\Ventanilla.Logica\obj\Debug\Ventanilla.Logica.csproj.CopyComplete
 D:\PI_VentanillaUnica5\Ventanilla.Logica\obj\Debug\Ventanilla.Logica.dll
 D:\PI_VentanillaUnica5\Ventanilla.Logica\obj\Debug\Ventanilla.Logica.pdb
+D:\PI_VentanillaUnica\Ventanilla.Logica\bin\Debug\Ventanilla.Logica.dll.config
+D:\PI_VentanillaUnica\Ventanilla.Logica\bin\Debug\Ventanilla.Logica.dll
+D:\PI_VentanillaUnica\Ventanilla.Logica\bin\Debug\Ventanilla.Logica.pdb
+D:\PI_VentanillaUnica\Ventanilla.Logica\obj\Debug\Ventanilla.Logica.csprojResolveAssemblyReference.cache
+D:\PI_VentanillaUnica\Ventanilla.Logica\obj\Debug\Ventanilla.Logica.csproj.CoreCompileInputs.cache
+D:\PI_VentanillaUnica\Ventanilla.Logica\obj\Debug\Ventanilla.Logica.csproj.CopyComplete
+D:\PI_VentanillaUnica\Ventanilla.Logica\obj\Debug\Ventanilla.Logica.dll
+D:\PI_VentanillaUnica\Ventanilla.Logica\obj\Debug\Ventanilla.Logica.pdb

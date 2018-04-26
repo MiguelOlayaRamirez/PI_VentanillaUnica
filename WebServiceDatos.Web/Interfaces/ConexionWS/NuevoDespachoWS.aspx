@@ -35,7 +35,6 @@ h2,h3,p{orphans:3;widows:3}p{margin-top:0;margin-bottom:1rem}*,::after,::before{
 </p>
 <p>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<asp:Button ID="txtGuardar" runat="server" OnClick="txtGuardar_Click" Text="Guardar" />
-    <asp:Button ID="txtGuardar1" runat="server" OnClick="txtGuardar1_Click" Text="Guardar" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     </p>
         <div>

@@ -35,30 +35,7 @@ namespace WebServiceDatos.Web.Interfaces.ConexionWS
             }
         }
 
-        protected void txtGuardar1_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                NuevoDespachoWs.NuevoDespacho_Ws obNuevoDespacho_Ws = new NuevoDespachoWs.NuevoDespacho_Ws();
-                obNuevoDespacho_Ws.Credentials = new System.Net.NetworkCredential("DIANA", "12345678", "localhost");
-                string stMensaje = obNuevoDespacho_Ws.wsNuevoDespacho(Convert.ToInt64(txtCodigoDespacho.Text), txtDescripcion.Text, txtDestino.Text, txtFechaDespacho.Text);
-
-                //string stMensaje = obNuevoDespacho_Ws.wsNuevoDespacho(Convert.ToInt64( txtCodigoDespacho.Text), txtDescripcion.Text, txtDestino.Text, txtFechaDespacho.Text);
-
-                Response.Write("<Script Language ='JavaScript'> parent.alert('" + stMensaje + "');</Script>");
-
-            }
-            catch (Exception ex)
-            {
-                Response.Write("<Script Language ='JavaScript'> parent.alert('" + ex.Message + "');</Script>");
-            }
-        }
+      
     }
 }
 
-namespace PI_VentanillaUnica
-{
-    public class ws
-    {
-    }
-}
