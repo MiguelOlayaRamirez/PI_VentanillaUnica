@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="wsNuevoRadicado">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CodigoRadicado" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="CodigoTercero" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="CodigoFuncionario" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="CodigoUsuario" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="FechaRadicado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DescripcionRadicado" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="wsNuevoRadicadoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="wsNuevoRadicadoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="clsSeguridad" type="tns:clsSeguridad" />
+      <s:complexType name="clsSeguridad">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="stToken" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AutenticacionToken" type="s:string" />
+        </s:sequence>
+        <s:anyAttribute />
+      </s:complexType>
+      <s:element name="wsNuevoDespacho">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CodigoRadicado" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="Descripcion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Destino" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FechaDespacho" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="wsNuevoDespachoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="wsNuevoDespachoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="stNuevoUsuario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Identificacion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="setNombres" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="setApellidos" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="setCargo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="stNuevoUsuarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="stNuevoUsuarioResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="dsConsultaTerceros">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="prefixText" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="count" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="dsConsultaTercerosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dsConsultaTercerosResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="dsConsultaRadicado">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="prefixText" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="count" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="dsConsultaRadicadoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dsConsultaRadicadoResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AutenticacionUsuario">
+        <s:complexType />
+      </s:element>
+      <s:element name="AutenticacionUsuarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AutenticacionUsuarioResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="dsConsulta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="lnId" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="dsConsultaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dsConsultaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="wsNuevoRadicadoSoapIn">
+    <wsdl:part name="parameters" element="tns:wsNuevoRadicado" />
+  </wsdl:message>
+  <wsdl:message name="wsNuevoRadicadoSoapOut">
+    <wsdl:part name="parameters" element="tns:wsNuevoRadicadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="wsNuevoRadicadoclsSeguridad">
+    <wsdl:part name="clsSeguridad" element="tns:clsSeguridad" />
+  </wsdl:message>
+  <wsdl:message name="wsNuevoDespachoSoapIn">
+    <wsdl:part name="parameters" element="tns:wsNuevoDespacho" />
+  </wsdl:message>
+  <wsdl:message name="wsNuevoDespachoSoapOut">
+    <wsdl:part name="parameters" element="tns:wsNuevoDespachoResponse" />
+  </wsdl:message>
+  <wsdl:message name="stNuevoUsuarioSoapIn">
+    <wsdl:part name="parameters" element="tns:stNuevoUsuario" />
+  </wsdl:message>
+  <wsdl:message name="stNuevoUsuarioSoapOut">
+    <wsdl:part name="parameters" element="tns:stNuevoUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="dsConsultaTercerosSoapIn">
+    <wsdl:part name="parameters" element="tns:dsConsultaTerceros" />
+  </wsdl:message>
+  <wsdl:message name="dsConsultaTercerosSoapOut">
+    <wsdl:part name="parameters" element="tns:dsConsultaTercerosResponse" />
+  </wsdl:message>
+  <wsdl:message name="dsConsultaRadicadoSoapIn">
+    <wsdl:part name="parameters" element="tns:dsConsultaRadicado" />
+  </wsdl:message>
+  <wsdl:message name="dsConsultaRadicadoSoapOut">
+    <wsdl:part name="parameters" element="tns:dsConsultaRadicadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="AutenticacionUsuarioSoapIn">
+    <wsdl:part name="parameters" element="tns:AutenticacionUsuario" />
+  </wsdl:message>
+  <wsdl:message name="AutenticacionUsuarioSoapOut">
+    <wsdl:part name="parameters" element="tns:AutenticacionUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="AutenticacionUsuarioclsSeguridad">
+    <wsdl:part name="clsSeguridad" element="tns:clsSeguridad" />
+  </wsdl:message>
+  <wsdl:message name="dsConsultaSoapIn">
+    <wsdl:part name="parameters" element="tns:dsConsulta" />
+  </wsdl:message>
+  <wsdl:message name="dsConsultaSoapOut">
+    <wsdl:part name="parameters" element="tns:dsConsultaResponse" />
+  </wsdl:message>
+  <wsdl:message name="dsConsultaclsSeguridad">
+    <wsdl:part name="clsSeguridad" element="tns:clsSeguridad" />
+  </wsdl:message>
+  <wsdl:portType name="Ventanilla_Unica_WsSoap">
+    <wsdl:operation name="wsNuevoRadicado">
+      <wsdl:input message="tns:wsNuevoRadicadoSoapIn" />
+      <wsdl:output message="tns:wsNuevoRadicadoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="wsNuevoDespacho">
+      <wsdl:input message="tns:wsNuevoDespachoSoapIn" />
+      <wsdl:output message="tns:wsNuevoDespachoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="stNuevoUsuario">
+      <wsdl:input message="tns:stNuevoUsuarioSoapIn" />
+      <wsdl:output message="tns:stNuevoUsuarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="dsConsultaTerceros">
+      <wsdl:input message="tns:dsConsultaTercerosSoapIn" />
+      <wsdl:output message="tns:dsConsultaTercerosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="dsConsultaRadicado">
+      <wsdl:input message="tns:dsConsultaRadicadoSoapIn" />
+      <wsdl:output message="tns:dsConsultaRadicadoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AutenticacionUsuario">
+      <wsdl:input message="tns:AutenticacionUsuarioSoapIn" />
+      <wsdl:output message="tns:AutenticacionUsuarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="dsConsulta">
+      <wsdl:input message="tns:dsConsultaSoapIn" />
+      <wsdl:output message="tns:dsConsultaSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Ventanilla_Unica_WsSoap" type="tns:Ventanilla_Unica_WsSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="wsNuevoRadicado">
+      <soap:operation soapAction="http://tempuri.org/wsNuevoRadicado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:wsNuevoRadicadoclsSeguridad" part="clsSeguridad" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="wsNuevoDespacho">
+      <soap:operation soapAction="http://tempuri.org/wsNuevoDespacho" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="stNuevoUsuario">
+      <soap:operation soapAction="http://tempuri.org/stNuevoUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dsConsultaTerceros">
+      <soap:operation soapAction="http://tempuri.org/dsConsultaTerceros" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dsConsultaRadicado">
+      <soap:operation soapAction="http://tempuri.org/dsConsultaRadicado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AutenticacionUsuario">
+      <soap:operation soapAction="http://tempuri.org/AutenticacionUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:AutenticacionUsuarioclsSeguridad" part="clsSeguridad" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dsConsulta">
+      <soap:operation soapAction="http://tempuri.org/dsConsulta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:dsConsultaclsSeguridad" part="clsSeguridad" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Ventanilla_Unica_WsSoap12" type="tns:Ventanilla_Unica_WsSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="wsNuevoRadicado">
+      <soap12:operation soapAction="http://tempuri.org/wsNuevoRadicado" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:wsNuevoRadicadoclsSeguridad" part="clsSeguridad" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="wsNuevoDespacho">
+      <soap12:operation soapAction="http://tempuri.org/wsNuevoDespacho" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="stNuevoUsuario">
+      <soap12:operation soapAction="http://tempuri.org/stNuevoUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dsConsultaTerceros">
+      <soap12:operation soapAction="http://tempuri.org/dsConsultaTerceros" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dsConsultaRadicado">
+      <soap12:operation soapAction="http://tempuri.org/dsConsultaRadicado" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AutenticacionUsuario">
+      <soap12:operation soapAction="http://tempuri.org/AutenticacionUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:AutenticacionUsuarioclsSeguridad" part="clsSeguridad" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dsConsulta">
+      <soap12:operation soapAction="http://tempuri.org/dsConsulta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:dsConsultaclsSeguridad" part="clsSeguridad" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Ventanilla_Unica_Ws">
+    <wsdl:port name="Ventanilla_Unica_WsSoap" binding="tns:Ventanilla_Unica_WsSoap">
+      <soap:address location="http://localhost/PI_VentanillaUnica/Ventanilla_Unica_Ws.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Ventanilla_Unica_WsSoap12" binding="tns:Ventanilla_Unica_WsSoap12">
+      <soap12:address location="http://localhost/PI_VentanillaUnica/Ventanilla_Unica_Ws.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

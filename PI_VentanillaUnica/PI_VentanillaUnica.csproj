@@ -109,7 +109,9 @@
     <Content Include="Interfaces\frmRecuperarContraseña.aspx" />
     <Content Include="Interfaces\frmUsuarios.aspx" />
     <Content Include="Interfaces\Login.aspx" />
+    <Content Include="Interfaces\NuevoDespachoWS.aspx" />
     <Content Include="Interfaces\NuevoRadicado.aspx" />
+    <Content Include="Interfaces\NuevoRadicadoWS.aspx" />
     <Content Include="Interfaces\Radicados.aspx" />
     <Content Include="js\sb-admin-charts.js" />
     <Content Include="js\sb-admin-charts.min.js" />
@@ -148,23 +150,12 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <None Include="Web References\NuevoUsuariows\NuevoUsuario.wsdl" />
-    <Content Include="Web References\NuevoUsuariows\Reference.map">
+    <Content Include="Ventanilla_Unica_Ws.asmx" />
+    <Content Include="Web References\wsServicios\Reference.map">
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </Content>
-    <None Include="Web References\wsNuevoDespacho\NuevoDespacho.disco" />
-    <None Include="Web References\NuevoUsuariows\NuevoUsuario.disco" />
-    <Content Include="Web References\wsNuevoRadicadoWeb\Reference.map">
-      <Generator>MSDiscoCodeGenerator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </Content>
-    <None Include="Web References\wsNuevoDespacho\NuevoDespacho.wsdl" />
-    <Content Include="Web References\wsNuevoDespacho\Reference.map">
-      <Generator>MSDiscoCodeGenerator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </Content>
-    <None Include="Web References\wsNuevoRadicadoWeb\Ventanilla_Unica_Ws.disco" />
+    <None Include="Web References\wsServicios\Ventanilla_Unica_Ws.disco" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -262,12 +253,26 @@
     <Compile Include="Interfaces\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\NuevoDespachoWS.aspx.cs">
+      <DependentUpon>NuevoDespachoWS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Interfaces\NuevoDespachoWS.aspx.designer.cs">
+      <DependentUpon>NuevoDespachoWS.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\NuevoRadicado.aspx.cs">
       <DependentUpon>NuevoRadicado.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Interfaces\NuevoRadicado.aspx.designer.cs">
       <DependentUpon>NuevoRadicado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\NuevoRadicadoWS.aspx.cs">
+      <DependentUpon>NuevoRadicadoWS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Interfaces\NuevoRadicadoWS.aspx.designer.cs">
+      <DependentUpon>NuevoRadicadoWS.aspx</DependentUpon>
     </Compile>
     <Compile Include="Interfaces\Radicados.aspx.cs">
       <DependentUpon>Radicados.aspx</DependentUpon>
@@ -292,17 +297,11 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="Web References\NuevoUsuariows\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.map</DependentUpon>
+    <Compile Include="Ventanilla_Unica_Ws.asmx.cs">
+      <DependentUpon>Ventanilla_Unica_Ws.asmx</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Web References\wsNuevoDespacho\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.map</DependentUpon>
-    </Compile>
-    <Compile Include="Web References\wsNuevoRadicadoWeb\Reference.cs">
+    <Compile Include="Web References\wsServicios\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.map</DependentUpon>
@@ -354,7 +353,7 @@
     <Content Include="vendor\font-awesome\scss\_variables.scss" />
     <Content Include="vendor\jquery\jquery.min.map" />
     <Content Include="vendor\jquery\jquery.slim.min.map" />
-    <None Include="Web References\wsNuevoRadicadoWeb\Ventanilla_Unica_Ws.wsdl" />
+    <None Include="Web References\wsServicios\Ventanilla_Unica_Ws.wsdl" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -375,42 +374,20 @@
     <WebReferences Include="Web References\" />
   </ItemGroup>
   <ItemGroup>
-    <WebReferenceUrl Include="http://localhost/PI_VentanillaUnica/NuevoDespacho.Ws.asmx">
-      <UrlBehavior>Dynamic</UrlBehavior>
-      <RelPath>Web References\wsNuevoDespacho\</RelPath>
-      <UpdateFromURL>http://localhost/PI_VentanillaUnica/NuevoDespacho.Ws.asmx</UpdateFromURL>
-      <ServiceLocationURL>
-      </ServiceLocationURL>
-      <CachedDynamicPropName>
-      </CachedDynamicPropName>
-      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
-      <CachedSettingsPropName>PI_VentanillaUnica_wsNuevoDespacho_NuevoDespacho_Ws</CachedSettingsPropName>
-    </WebReferenceUrl>
-    <WebReferenceUrl Include="http://localhost/PI_VentanillaUnica/NuevoUsuario.asmx">
-      <UrlBehavior>Dynamic</UrlBehavior>
-      <RelPath>Web References\NuevoUsuariows\</RelPath>
-      <UpdateFromURL>http://localhost/PI_VentanillaUnica/NuevoUsuario.asmx</UpdateFromURL>
-      <ServiceLocationURL>
-      </ServiceLocationURL>
-      <CachedDynamicPropName>
-      </CachedDynamicPropName>
-      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
-      <CachedSettingsPropName>PI_VentanillaUnica_NuevoUsuariows_NuevoUsuario</CachedSettingsPropName>
-    </WebReferenceUrl>
-    <WebReferenceUrl Include="http://localhost/PI_VentanillaUnica/Servicios/Ventanilla_Unica_Ws.asmx">
-      <UrlBehavior>Dynamic</UrlBehavior>
-      <RelPath>Web References\wsNuevoRadicadoWeb\</RelPath>
-      <UpdateFromURL>http://localhost/PI_VentanillaUnica/Servicios/Ventanilla_Unica_Ws.asmx</UpdateFromURL>
-      <ServiceLocationURL>
-      </ServiceLocationURL>
-      <CachedDynamicPropName>
-      </CachedDynamicPropName>
-      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
-      <CachedSettingsPropName>PI_VentanillaUnica_wsNuevoRadicadoWeb_Ventanilla_Unica_Ws</CachedSettingsPropName>
-    </WebReferenceUrl>
+    <Folder Include="CargaDocumento\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="CargaDocumento\" />
+    <WebReferenceUrl Include="http://localhost/PI_VentanillaUnica/Ventanilla_Unica_Ws.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\wsServicios\</RelPath>
+      <UpdateFromURL>http://localhost/PI_VentanillaUnica/Ventanilla_Unica_Ws.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>PI_VentanillaUnica_wsServicios_Ventanilla_Unica_Ws</CachedSettingsPropName>
+    </WebReferenceUrl>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

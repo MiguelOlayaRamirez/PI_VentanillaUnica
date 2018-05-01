@@ -2,14 +2,8 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="PI_VentanillaUnica.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
-    <Setting Name="PI_VentanillaUnica_wsNuevoRadicadoWeb_Ventanilla_Unica_Ws" Type="(Web Service URL)" Scope="Application">
-      <Value Profile="(Default)">http://localhost/PI_VentanillaUnica/Servicios/Ventanilla_Unica_Ws.asmx</Value>
-    </Setting>
-    <Setting Name="PI_VentanillaUnica_wsNuevoDespacho_NuevoDespacho_Ws" Type="(Web Service URL)" Scope="Application">
-      <Value Profile="(Default)">http://localhost/PI_VentanillaUnica/NuevoDespacho.Ws.asmx</Value>
-    </Setting>
-    <Setting Name="PI_VentanillaUnica_NuevoUsuariows_NuevoUsuario" Type="(Web Service URL)" Scope="Application">
-      <Value Profile="(Default)">http://localhost/PI_VentanillaUnica/NuevoUsuario.asmx</Value>
+    <Setting Name="PI_VentanillaUnica_wsServicios_Ventanilla_Unica_Ws" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/PI_VentanillaUnica/Ventanilla_Unica_Ws.asmx</Value>
     </Setting>
   </Settings>
 </SettingsFile>

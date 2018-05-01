@@ -26,30 +26,10 @@ namespace PI_VentanillaUnica.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://localhost/PI_VentanillaUnica/Servicios/Ventanilla_Unica_Ws.asmx")]
-        public string PI_VentanillaUnica_wsNuevoRadicadoWeb_Ventanilla_Unica_Ws {
+        [global::System.Configuration.DefaultSettingValueAttribute("http://localhost/PI_VentanillaUnica/Ventanilla_Unica_Ws.asmx")]
+        public string PI_VentanillaUnica_wsServicios_Ventanilla_Unica_Ws {
             get {
-                return ((string)(this["PI_VentanillaUnica_wsNuevoRadicadoWeb_Ventanilla_Unica_Ws"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://localhost/PI_VentanillaUnica/NuevoDespacho.Ws.asmx")]
-        public string PI_VentanillaUnica_wsNuevoDespacho_NuevoDespacho_Ws {
-            get {
-                return ((string)(this["PI_VentanillaUnica_wsNuevoDespacho_NuevoDespacho_Ws"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://localhost/PI_VentanillaUnica/NuevoUsuario.asmx")]
-        public string PI_VentanillaUnica_NuevoUsuariows_NuevoUsuario {
-            get {
-                return ((string)(this["PI_VentanillaUnica_NuevoUsuariows_NuevoUsuario"]));
+                return ((string)(this["PI_VentanillaUnica_wsServicios_Ventanilla_Unica_Ws"]));
             }
         }
     }
