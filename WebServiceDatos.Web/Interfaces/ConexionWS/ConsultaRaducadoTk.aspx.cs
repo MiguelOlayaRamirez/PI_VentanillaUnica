@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data;
-namespace WebServiceDatos.Web.Interfaces.ConexionWS
+namespace PI_VentanillaUnica.Interfaces
 {
     public partial class ConsultaRaducadoTk : System.Web.UI.Page
     {
